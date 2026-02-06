@@ -300,6 +300,8 @@ BigVectorBench+ provides a synthesized workload generator to create **controllab
 #### Requirements
 ```bash
 pip install numpy h5py tqdm scikit-learn
+```
+
 #### Output (HDF5)
 
 The output file (`--out_fn`) includes:
