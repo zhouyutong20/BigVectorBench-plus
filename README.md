@@ -1,4 +1,4 @@
-# BigVectorBench
+# BigVectorBench-plus
 
 [![LICENSE](https://img.shields.io/github/license/BenchCouncil/BigVectorBench.svg)](https://github.com/BenchCouncil/BigVectorBench/blob/master/LICENSE)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/BenchCouncil/BigVectorBench/bvb-run.yml?branch=main)](https://github.com/BenchCouncil/BigVectorBench/actions/workflows/bvb-run.yml)
@@ -292,6 +292,30 @@ Arguments:
 
 - Store the datasets in the `./data` directory named as `artificial-*-*d-*l-*a.hdf5`.
 - You should add your new datasets name in `./bigvectorbench/datasets.py` line 947 to update the `ART_DATASETS` 's key.
+  
+### Synthesized Workload Generator
+
+BigVectorBench+ provides a synthesized workload generator to create **controllable, reproducible, and parameterizable** filter workloads for filtered ANN evaluation. It outputs a standard `filter-ann` HDF5 file containing vectors, labels, per-query range filters, and **ground-truth** (`neighbors`, `distances`) for Recall–QPS benchmarking.
+
+#### Requirements
+```bash
+pip install numpy h5py tqdm scikit-learn
+#### Output (HDF5)
+
+The output file (`--out_fn`) includes:
+
+* `train_vec` / `test_vec`
+* `train_label` (shape: `n_samples` × `n_filters`)
+* `test_label` (shape: `m_test` × `n_filters` × 2, each range `[left, right]`, inclusive)
+* `neighbors` / `distances` (filtered ground truth, top-k)
+
+**Key metadata attributes:** `type=filter-ann`, `distance`, `dimension`, `filter_expr_func`, and range params (`range_mode`, `range_ratio_request`, `range_mean_ratio`, `range_min_ratio`, `range_max_ratio`, `range_beta_shape`).
+
+#### Modes
+
+* `--mode static`: fixed overall selectivity via `--ratio_request`
+* `--mode dynamic_beta`: per-query selectivity sampled from a bounded Beta distribution (`--mean_ratio`, `--min_ratio`, `--max_ratio`, `--beta_shape`)
+
 
 ### Completed artificial workloads
 
