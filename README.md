@@ -318,6 +318,16 @@ The output file (`--out_fn`) includes:
 * `--mode static`: fixed overall selectivity via `--ratio_request`
 * `--mode dynamic_beta`: per-query selectivity sampled from a bounded Beta distribution (`--mean_ratio`, `--min_ratio`, `--max_ratio`, `--beta_shape`)
 
+#### Completed artificial workloads by Synthesized Workload Generator
+
+BigVectorBench-plus includes a collection of synthetic datasets designed for benchmarking vector database performance. The datasets are available on [Hugging Face](https://huggingface.co/datasets/zhouyutong/BigVectorBench-plus) and are organized as follows:
+
+- [artificial_06.hdf5](https://huggingface.co/datasets/zhouyutong/BigVectorBench-plus/resolve/main/data/artificial_06.hdf5)
+- [artificial_12.hdf5](https://huggingface.co/datasets/zhouyutong/BigVectorBench-plus/resolve/main/data/artificial_12.hdf5)
+- [artificial_50.hdf5](https://huggingface.co/datasets/zhouyutong/BigVectorBench-plus/resolve/main/data/artificial_50.hdf5)
+- [artificial_80.hdf5](https://huggingface.co/datasets/zhouyutong/BigVectorBench-plus/resolve/main/data/artificial_80.hdf5)
+
+
 
 ### Completed artificial workloads
 
