@@ -295,7 +295,8 @@ BigVectorBench-plus includes a collection of synthetic datasets designed for ben
 
 For the development of BigVectorBench, we welcome contributions from the community. If you are interested in contributing to this project, please follow the .[Guidelines for Contributing](./CONTRIBUTING.md).
 
-## Results (Until July 2024)
+## Results (Until Feb 2026)
+The results of BigVectorBench-plus can be found [here](https://github.com/zhouyutong20/BigVectorBench-plus/tree/main/results/bvb-plus).
 
 - ag_news-384-euclidean vs ag_news-384-euclidean-filter
 ![](./results/vldb2025/ag_news-384-euclidean.png)
