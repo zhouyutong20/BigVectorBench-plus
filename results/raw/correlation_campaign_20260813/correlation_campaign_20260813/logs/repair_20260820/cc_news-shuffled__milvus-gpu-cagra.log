@@ -1,0 +1,31 @@
+START 2026-08-22T15:35:44+08:00 cpuset=84-111 command=<remote_artifact> milvus-gpu-cagra cc_news-shuffled <remote_artifact> 84-111
+2026-08-22 15:35:45,963 - bvb - INFO - running only milvus-gpu-cagra
+2026-08-22 15:35:46,111 - bvb - INFO - Order: [Definition(algorithm='milvus-gpu-cagra', constructor='MilvusGPU_CAGRA', module='bigvectorbench.algorithms.milvus_gpu', docker_tag='bigvectorbench-milvus_gpu', arguments=['euclidean', 384, {'graph_degree': 32, 'intermediate_graph_degree': 64, 'build_algo': 'NN_DESCENT'}], query_argument_groups=[[512, 2, 0, 0, 0], [512, 4, 0, 0, 0], [512, 8, 0, 0, 0], [512, 16, 0, 0, 0], [512, 32, 0, 0, 0]], disabled=False), Definition(algorithm='milvus-gpu-cagra', constructor='MilvusGPU_CAGRA', module='bigvectorbench.algorithms.milvus_gpu', docker_tag='bigvectorbench-milvus_gpu', arguments=['euclidean', 384, {'graph_degree': 128, 'intermediate_graph_degree': 256, 'build_algo': 'IVF_PQ'}], query_argument_groups=[[512, 2, 0, 0, 0], [512, 4, 0, 0, 0], [512, 8, 0, 0, 0], [512, 16, 0, 0, 0], [512, 32, 0, 0, 0]], disabled=False), Definition(algorithm='milvus-gpu-cagra', constructor='MilvusGPU_CAGRA', module='bigvectorbench.algorithms.milvus_gpu', docker_tag='bigvectorbench-milvus_gpu', arguments=['euclidean', 384, {'graph_degree': 32, 'intermediate_graph_degree': 64, 'build_algo': 'IVF_PQ'}], query_argument_groups=[[512, 2, 0, 0, 0], [512, 4, 0, 0, 0], [512, 8, 0, 0, 0], [512, 16, 0, 0, 0], [512, 32, 0, 0, 0]], disabled=False), Definition(algorithm='milvus-gpu-cagra', constructor='MilvusGPU_CAGRA', module='bigvectorbench.algorithms.milvus_gpu', docker_tag='bigvectorbench-milvus_gpu', arguments=['euclidean', 384, {'graph_degree': 64, 'intermediate_graph_degree': 128, 'build_algo': 'NN_DESCENT'}], query_argument_groups=[[512, 2, 0, 0, 0], [512, 4, 0, 0, 0], [512, 8, 0, 0, 0], [512, 16, 0, 0, 0], [512, 32, 0, 0, 0]], disabled=False), Definition(algorithm='milvus-gpu-cagra', constructor='MilvusGPU_CAGRA', module='bigvectorbench.algorithms.milvus_gpu', docker_tag='bigvectorbench-milvus_gpu', arguments=['euclidean', 384, {'graph_degree': 64, 'intermediate_graph_degree': 128, 'build_algo': 'IVF_PQ'}], query_argument_groups=[[512, 2, 0, 0, 0], [512, 4, 0, 0, 0], [512, 8, 0, 0, 0], [512, 16, 0, 0, 0], [512, 32, 0, 0, 0]], disabled=False), Definition(algorithm='milvus-gpu-cagra', constructor='MilvusGPU_CAGRA', module='bigvectorbench.algorithms.milvus_gpu', docker_tag='bigvectorbench-milvus_gpu', arguments=['euclidean', 384, {'graph_degree': 128, 'intermediate_graph_degree': 256, 'build_algo': 'NN_DESCENT'}], query_argument_groups=[[512, 2, 0, 0, 0], [512, 4, 0, 0, 0], [512, 8, 0, 0, 0], [512, 16, 0, 0, 0], [512, 32, 0, 0, 0]], disabled=False)]
+time="2026-08-22T15:35:46+08:00" level=warning msg="a network with name milvus exists but was not created for project \"milvus_gpu\".\nSet `external: true` to use an existing network"
+ Container milvus-minio  Creating
+ Container milvus-etcd  Creating
+Error response from daemon: Conflict. The container name "/milvus-etcd" is already in use by container "fb5dcc92189118792730b7cf4d61a42981bee2c5e4d694bfff8ca6b84f5a3915". You have to remove (or rename) that container to be able to reuse that name.
+Process Process-1:
+Traceback (most recent call last):
+  File "<remote_artifact>", line 314, in _bootstrap
+    self.run()
+  File "<remote_artifact>", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "<remote_artifact>", line 152, in run_worker
+    run(
+  File "<remote_artifact>", line 729, in run
+    algo = instantiate_algorithm(definition)
+  File "<remote_artifact>", line 45, in instantiate_algorithm
+    return constructor(*definition.arguments)
+  File "<remote_artifact>", line 163, in __init__
+    super().__init__(metric, dim)
+  File "<remote_artifact>", line 49, in __init__
+    self.start_milvus()
+  File "<remote_artifact>", line 42, in start_milvus
+    subprocess.run([*compose, "up", "-d"], cwd=cwd, check=True)
+  File "<remote_artifact>", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['docker', 'compose', '-f', '<remote_artifact>, 'up', '-d']' returned non-zero exit status 1.
+Trying to instantiate bigvectorbench.algorithms.milvus_gpu.MilvusGPU_CAGRA(['euclidean', 384, {'graph_degree': 32, 'intermediate_graph_degree': 64, 'build_algo': 'NN_DESCENT'}])
+2026-08-22 15:35:46,394 - bvb - INFO - Terminating 1 workers
+incomplete result grid for milvus-gpu-cagra cc_news-shuffled: got 5 expected 30

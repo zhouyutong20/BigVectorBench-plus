@@ -1,0 +1,3 @@
+jobs=68 runnable=4 blocked=12 parallelism=4
+START artificial-corr-12-original__weaviate-hnsw slot=0 cpuset=0-27
+DONE artificial-corr-12-original__weaviate-hnsw status=failed rc=-15

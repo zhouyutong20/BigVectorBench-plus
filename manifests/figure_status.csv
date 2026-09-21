@@ -1,0 +1,8 @@
+figure_id,status,scope,point_rows,note
+correlation_artificial,selected,C1-C2,see_point_table,new artificial correlation pair
+correlation_cc_news,selected,C3-C4,see_point_table,new CC-News correlation pair
+acorn_single_thread,selected,C1-C4,see_point_table,new-dataset ACORN audit
+udf_performance,selected,U1,see_point_table,artificial-UDF performance
+correlation_stability,selected,C1-C4,see_point_table,new-dataset repeated-run stability
+build_cost,selected,all_build_time,see_point_table,all selected build-cost figure
+build_time_recall,selected,all_build_time,see_point_table,all selected build-time/Recall figure

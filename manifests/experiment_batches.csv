@@ -1,0 +1,5 @@
+experiment_batch_id,scope,status,evidence_path,notes
+correlation_campaign_20260813,C1-C4,selected_new_dataset_results,results/raw/correlation_campaign_20260813,Four new correlation datasets; raw result and build/search records are retained.
+u1_predicate_cost_20260918,U1,selected_new_dataset_results,results/diagnostics/U1,artificial-udf-12 raw passes summary repeats patch and completion marker.
+acorn_single_thread_reuse_20260920,C1-C4,selected_new_dataset_diagnostic,results/diagnostics/ACORN_single_thread_20260920,New-dataset ACORN audit retained separately from correlation raw results.
+legacy_build_time_20260916,all_available_workloads,selected_build_time,results/build_time,Only build-time tables are retained from the legacy workload result collection.

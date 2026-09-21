@@ -1,0 +1,483 @@
+START 2026-08-13T18:01:53+08:00 slot=3 cpuset=84-111
+building for layer 20
+building for layer 19
+building for layer 18
+building for layer 17
+building for layer 16
+building for layer 15
+building for layer 14
+building for layer 13
+building for layer 12
+building for layer 11
+building for layer 10
+building for layer 9
+building for layer 8
+building for layer 7
+building for layer 6
+building for layer 5
+building for layer 4
+building for layer 3
+building for layer 2
+building for layer 1
+building for layer 0
+construction time:793.278s
+save index done
+build_time_seconds:801.644
+index_file_bytes:1477492396
+generating for 17
+load index finished ...
+[Warning] Cannot open ID mapping file: bins/01_maxcorr/id_mapping.bin. Using raw IDs.
+
+>>> Saving paths to 01_zero.txt (converting IDs)...
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.43847
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.34011
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.24599
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.40233
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.57896
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.37477
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.56354
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.41668
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.41756
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.45071
+>>> Saved 10 paths to 01_zero.txt.
+
+suffix = 17
+ef:100 latency_p50_s:0.000369 latency_p95_s:0.000462 latency_p99_s:0.000491 warmup_runs:2 warmup_queries:1000
+ef:200 latency_p50_s:0.000703 latency_p95_s:0.00087 latency_p99_s:0.00091801 warmup_runs:2 warmup_queries:1000
+ef:400 latency_p50_s:0.0013175 latency_p95_s:0.00160305 latency_p99_s:0.001698 warmup_runs:2 warmup_queries:1000
+ef:800 latency_p50_s:0.002469 latency_p95_s:0.002967 latency_p99_s:0.00314701 warmup_runs:2 warmup_queries:1000
+ef:1600 latency_p50_s:0.0044765 latency_p95_s:0.00531805 latency_p99_s:0.00554604 warmup_runs:2 warmup_queries:1000
+building for layer 20
+building for layer 19
+building for layer 18
+building for layer 17
+building for layer 16
+building for layer 15
+building for layer 14
+building for layer 13
+building for layer 12
+building for layer 11
+building for layer 10
+building for layer 9
+building for layer 8
+building for layer 7
+building for layer 6
+building for layer 5
+building for layer 4
+building for layer 3
+building for layer 2
+building for layer 1
+building for layer 0
+construction time:2015.45s
+save index done
+build_time_seconds:2024.81
+index_file_bytes:1568059232
+generating for 17
+load index finished ...
+[Warning] Cannot open ID mapping file: bins/01_maxcorr/id_mapping.bin. Using raw IDs.
+
+>>> Saving paths to 01_zero.txt (converting IDs)...
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.36472
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.33075
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.29246
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.39611
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.49404
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.39472
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.56758
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.51114
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.48619
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.4385
+>>> Saved 10 paths to 01_zero.txt.
+
+suffix = 17
+ef:100 latency_p50_s:0.000449 latency_p95_s:0.00056005 latency_p99_s:0.00059501 warmup_runs:2 warmup_queries:1000
+ef:200 latency_p50_s:0.000837 latency_p95_s:0.001036 latency_p99_s:0.001104 warmup_runs:2 warmup_queries:1000
+ef:400 latency_p50_s:0.001584 latency_p95_s:0.001923 latency_p99_s:0.00202901 warmup_runs:2 warmup_queries:1000
+ef:800 latency_p50_s:0.0029635 latency_p95_s:0.003559 latency_p99_s:0.003743 warmup_runs:2 warmup_queries:1000
+ef:1600 latency_p50_s:0.005356 latency_p95_s:0.006407 latency_p99_s:0.00672001 warmup_runs:2 warmup_queries:1000
+building for layer 20
+building for layer 19
+building for layer 18
+building for layer 17
+building for layer 16
+building for layer 15
+building for layer 14
+building for layer 13
+building for layer 12
+building for layer 11
+building for layer 10
+building for layer 9
+building for layer 8
+building for layer 7
+building for layer 6
+building for layer 5
+building for layer 4
+building for layer 3
+building for layer 2
+building for layer 1
+building for layer 0
+construction time:765.079s
+save index done
+build_time_seconds:776.537
+index_file_bytes:2007874716
+generating for 17
+load index finished ...
+[Warning] Cannot open ID mapping file: bins/01_maxcorr/id_mapping.bin. Using raw IDs.
+
+>>> Saving paths to 01_zero.txt (converting IDs)...
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.34343
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.32266
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.21798
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.46387
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.58732
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.45101
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.38403
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.35202
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.47831
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.54854
+>>> Saved 10 paths to 01_zero.txt.
+
+suffix = 17
+ef:100 latency_p50_s:0.000462 latency_p95_s:0.000635 latency_p99_s:0.000716 warmup_runs:2 warmup_queries:1000
+ef:200 latency_p50_s:0.000839 latency_p95_s:0.00112505 latency_p99_s:0.001251 warmup_runs:2 warmup_queries:1000
+ef:400 latency_p50_s:0.001538 latency_p95_s:0.001988 latency_p99_s:0.00217801 warmup_runs:2 warmup_queries:1000
+ef:800 latency_p50_s:0.002816 latency_p95_s:0.00353005 latency_p99_s:0.003827 warmup_runs:2 warmup_queries:1000
+ef:1600 latency_p50_s:0.005065 latency_p95_s:0.00622605 latency_p99_s:0.00685734 warmup_runs:2 warmup_queries:1000
+building for layer 20
+building for layer 19
+building for layer 18
+building for layer 17
+building for layer 16
+building for layer 15
+building for layer 14
+building for layer 13
+building for layer 12
+building for layer 11
+building for layer 10
+building for layer 9
+building for layer 8
+building for layer 7
+building for layer 6
+building for layer 5
+building for layer 4
+building for layer 3
+building for layer 2
+building for layer 1
+building for layer 0
+construction time:2546.49s
+save index done
+build_time_seconds:2558.84
+index_file_bytes:2232578700
+generating for 17
+load index finished ...
+[Warning] Cannot open ID mapping file: bins/01_maxcorr/id_mapping.bin. Using raw IDs.
+
+>>> Saving paths to 01_zero.txt (converting IDs)...
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.27401
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.36975
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.28135
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.47714
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.57627
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.41278
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.51733
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.44588
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.39588
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.5695
+>>> Saved 10 paths to 01_zero.txt.
+
+suffix = 17
+ef:100 latency_p50_s:0.000602 latency_p95_s:0.00082405 latency_p99_s:0.00097201 warmup_runs:2 warmup_queries:1000
+ef:200 latency_p50_s:0.001069 latency_p95_s:0.001424 latency_p99_s:0.001586 warmup_runs:2 warmup_queries:1000
+ef:400 latency_p50_s:0.001969 latency_p95_s:0.002614 latency_p99_s:0.00302901 warmup_runs:2 warmup_queries:1000
+ef:800 latency_p50_s:0.003359 latency_p95_s:0.004233 latency_p99_s:0.00453802 warmup_runs:2 warmup_queries:1000
+ef:1600 latency_p50_s:0.006074 latency_p95_s:0.00753005 latency_p99_s:0.00799704 warmup_runs:2 warmup_queries:1000
+building for layer 20
+building for layer 19
+building for layer 18
+building for layer 17
+building for layer 16
+building for layer 15
+building for layer 14
+building for layer 13
+building for layer 12
+building for layer 11
+building for layer 10
+building for layer 9
+building for layer 8
+building for layer 7
+building for layer 6
+building for layer 5
+building for layer 4
+building for layer 3
+building for layer 2
+building for layer 1
+building for layer 0
+construction time:2865.13s
+save index done
+build_time_seconds:2881.92
+index_file_bytes:3050137728
+generating for 17
+load index finished ...
+[Warning] Cannot open ID mapping file: bins/01_maxcorr/id_mapping.bin. Using raw IDs.
+
+>>> Saving paths to 01_zero.txt (converting IDs)...
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.43281
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.37013
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.23258
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.42778
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.66516
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.42339
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.45695
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.4214
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.48915
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.52239
+>>> Saved 10 paths to 01_zero.txt.
+
+suffix = 17
+ef:100 latency_p50_s:0.000766 latency_p95_s:0.00112 latency_p99_s:0.00124901 warmup_runs:2 warmup_queries:1000
+ef:200 latency_p50_s:0.001377 latency_p95_s:0.00196405 latency_p99_s:0.00224605 warmup_runs:2 warmup_queries:1000
+ef:400 latency_p50_s:0.002424 latency_p95_s:0.00329105 latency_p99_s:0.003713 warmup_runs:2 warmup_queries:1000
+ef:800 latency_p50_s:0.004044 latency_p95_s:0.00529805 latency_p99_s:0.005742 warmup_runs:2 warmup_queries:1000
+ef:1600 latency_p50_s:0.006923 latency_p95_s:0.00872205 latency_p99_s:0.00928901 warmup_runs:2 warmup_queries:1000
+<remote_artifact> line 163: unexpected EOF while looking for matching `"'
+START 2026-08-15T11:59:00+08:00 slot=3 cpuset=84-111
+building for layer 20
+building for layer 19
+building for layer 18
+building for layer 17
+building for layer 16
+building for layer 15
+building for layer 14
+building for layer 13
+building for layer 12
+building for layer 11
+building for layer 10
+building for layer 9
+building for layer 8
+building for layer 7
+building for layer 6
+building for layer 5
+building for layer 4
+building for layer 3
+building for layer 2
+building for layer 1
+building for layer 0
+construction time:600.368s
+save index done
+build_time_seconds:609.318
+index_file_bytes:1477523728
+generating for 17
+load index finished ...
+[Warning] Cannot open ID mapping file: bins/01_maxcorr/id_mapping.bin. Using raw IDs.
+
+>>> Saving paths to 01_zero.txt (converting IDs)...
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.44135
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.38123
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.32858
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.44887
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.55639
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.42213
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.47445
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.5049
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.40147
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.54251
+>>> Saved 10 paths to 01_zero.txt.
+
+suffix = 17
+ef:100 latency_p50_s:0.000374 latency_p95_s:0.00047 latency_p99_s:0.00049801 warmup_runs:2 warmup_queries:1000
+ef:200 latency_p50_s:0.000682 latency_p95_s:0.000845 latency_p99_s:0.000892 warmup_runs:2 warmup_queries:1000
+ef:400 latency_p50_s:0.001278 latency_p95_s:0.001556 latency_p99_s:0.001643 warmup_runs:2 warmup_queries:1000
+ef:800 latency_p50_s:0.002396 latency_p95_s:0.002877 latency_p99_s:0.003019 warmup_runs:2 warmup_queries:1000
+ef:1600 latency_p50_s:0.004387 latency_p95_s:0.005201 latency_p99_s:0.005426 warmup_runs:2 warmup_queries:1000
+building for layer 20
+building for layer 19
+building for layer 18
+building for layer 17
+building for layer 16
+building for layer 15
+building for layer 14
+building for layer 13
+building for layer 12
+building for layer 11
+building for layer 10
+building for layer 9
+building for layer 8
+building for layer 7
+building for layer 6
+building for layer 5
+building for layer 4
+building for layer 3
+building for layer 2
+building for layer 1
+building for layer 0
+construction time:2068.2s
+save index done
+build_time_seconds:2077.21
+index_file_bytes:1568117264
+generating for 17
+load index finished ...
+[Warning] Cannot open ID mapping file: bins/01_maxcorr/id_mapping.bin. Using raw IDs.
+
+>>> Saving paths to 01_zero.txt (converting IDs)...
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.4212
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.35373
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.18281
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.38668
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.66608
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.43342
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.50755
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.42235
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.47588
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.57284
+>>> Saved 10 paths to 01_zero.txt.
+
+suffix = 17
+ef:100 latency_p50_s:0.000416 latency_p95_s:0.000511 latency_p99_s:0.000539 warmup_runs:2 warmup_queries:1000
+ef:200 latency_p50_s:0.000775 latency_p95_s:0.000942 latency_p99_s:0.000987 warmup_runs:2 warmup_queries:1000
+ef:400 latency_p50_s:0.001452 latency_p95_s:0.001757 latency_p99_s:0.001844 warmup_runs:2 warmup_queries:1000
+ef:800 latency_p50_s:0.0027105 latency_p95_s:0.00325405 latency_p99_s:0.00341002 warmup_runs:2 warmup_queries:1000
+ef:1600 latency_p50_s:0.0049335 latency_p95_s:0.005882 latency_p99_s:0.00617303 warmup_runs:2 warmup_queries:1000
+building for layer 20
+building for layer 19
+building for layer 18
+building for layer 17
+building for layer 16
+building for layer 15
+building for layer 14
+building for layer 13
+building for layer 12
+building for layer 11
+building for layer 10
+building for layer 9
+building for layer 8
+building for layer 7
+building for layer 6
+building for layer 5
+building for layer 4
+building for layer 3
+building for layer 2
+building for layer 1
+building for layer 0
+construction time:762.291s
+save index done
+build_time_seconds:774.037
+index_file_bytes:2007852236
+generating for 17
+load index finished ...
+[Warning] Cannot open ID mapping file: bins/01_maxcorr/id_mapping.bin. Using raw IDs.
+
+>>> Saving paths to 01_zero.txt (converting IDs)...
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.34236
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.42536
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.2084
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.46094
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.55607
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.44946
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.47495
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.42472
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.40442
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.51396
+>>> Saved 10 paths to 01_zero.txt.
+
+suffix = 17
+ef:100 latency_p50_s:0.0005675 latency_p95_s:0.000803 latency_p99_s:0.000905 warmup_runs:2 warmup_queries:1000
+ef:200 latency_p50_s:0.001028 latency_p95_s:0.001402 latency_p99_s:0.00154301 warmup_runs:2 warmup_queries:1000
+ef:400 latency_p50_s:0.001902 latency_p95_s:0.002526 latency_p99_s:0.00285201 warmup_runs:2 warmup_queries:1000
+ef:800 latency_p50_s:0.003471 latency_p95_s:0.004446 latency_p99_s:0.00503003 warmup_runs:2 warmup_queries:1000
+ef:1600 latency_p50_s:0.0061915 latency_p95_s:0.0076941 latency_p99_s:0.008627 warmup_runs:2 warmup_queries:1000
+building for layer 20
+building for layer 19
+building for layer 18
+building for layer 17
+building for layer 16
+building for layer 15
+building for layer 14
+building for layer 13
+building for layer 12
+building for layer 11
+building for layer 10
+building for layer 9
+building for layer 8
+building for layer 7
+building for layer 6
+building for layer 5
+building for layer 4
+building for layer 3
+building for layer 2
+building for layer 1
+building for layer 0
+construction time:2597.54s
+save index done
+build_time_seconds:2610.55
+index_file_bytes:2232708448
+generating for 17
+load index finished ...
+[Warning] Cannot open ID mapping file: bins/01_maxcorr/id_mapping.bin. Using raw IDs.
+
+>>> Saving paths to 01_zero.txt (converting IDs)...
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.3345
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.25189
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.22698
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.37055
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.54328
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.38778
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.4768
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.54453
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.45062
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.60607
+>>> Saved 10 paths to 01_zero.txt.
+
+suffix = 17
+ef:100 latency_p50_s:0.00053 latency_p95_s:0.000718 latency_p99_s:0.000774 warmup_runs:2 warmup_queries:1000
+ef:200 latency_p50_s:0.000968 latency_p95_s:0.00128 latency_p99_s:0.00138902 warmup_runs:2 warmup_queries:1000
+ef:400 latency_p50_s:0.001836 latency_p95_s:0.002365 latency_p99_s:0.00254701 warmup_runs:2 warmup_queries:1000
+ef:800 latency_p50_s:0.00326 latency_p95_s:0.00409415 latency_p99_s:0.00435301 warmup_runs:2 warmup_queries:1000
+ef:1600 latency_p50_s:0.005809 latency_p95_s:0.00716805 latency_p99_s:0.00753002 warmup_runs:2 warmup_queries:1000
+building for layer 20
+building for layer 19
+building for layer 18
+building for layer 17
+building for layer 16
+building for layer 15
+building for layer 14
+building for layer 13
+building for layer 12
+building for layer 11
+building for layer 10
+building for layer 9
+building for layer 8
+building for layer 7
+building for layer 6
+building for layer 5
+building for layer 4
+building for layer 3
+building for layer 2
+building for layer 1
+building for layer 0
+construction time:2855.74s
+save index done
+build_time_seconds:2873.59
+index_file_bytes:3049851608
+generating for 17
+load index finished ...
+[Warning] Cannot open ID mapping file: bins/01_maxcorr/id_mapping.bin. Using raw IDs.
+
+>>> Saving paths to 01_zero.txt (converting IDs)...
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.41631
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.30247
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.14385
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.44135
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.61226
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.49313
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.43817
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.4937
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.39896
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.50366
+>>> Saved 10 paths to 01_zero.txt.
+
+suffix = 17
+ef:100 latency_p50_s:0.00065 latency_p95_s:0.000916 latency_p99_s:0.00101301 warmup_runs:2 warmup_queries:1000
+ef:200 latency_p50_s:0.001179 latency_p95_s:0.00161305 latency_p99_s:0.00178902 warmup_runs:2 warmup_queries:1000
+ef:400 latency_p50_s:0.002133 latency_p95_s:0.00282005 latency_p99_s:0.00310506 warmup_runs:2 warmup_queries:1000
+ef:800 latency_p50_s:0.003809 latency_p95_s:0.004882 latency_p99_s:0.005248 warmup_runs:2 warmup_queries:1000
+ef:1600 latency_p50_s:0.006647 latency_p95_s:0.00828 latency_p99_s:0.00873801 warmup_runs:2 warmup_queries:1000

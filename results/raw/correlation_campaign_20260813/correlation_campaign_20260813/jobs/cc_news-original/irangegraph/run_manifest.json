@@ -1,0 +1,16 @@
+{
+  "schema_version": 4,
+  "experiment": "correlation_main_grid",
+  "algorithm": "irangegraph",
+  "dataset": "cc_news-original",
+  "status": "complete",
+  "threads": 28,
+  "cpuset": "28-55",
+  "warm_cache": true,
+  "os_page_cache_dropped": false,
+  "warmup_rounds": 2,
+  "warmup_queries": 1000,
+  "measured_query_runs": 1,
+  "independent_build_runs": 1,
+  "native_input_manifest": "<remote_artifact>"
+}

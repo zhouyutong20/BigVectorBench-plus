@@ -1,0 +1,59 @@
+2026-09-18 17:58:32 starting U1 predicate-cost experiment; data=<remote_artifact>
+2026-09-18 17:58:32 protocol: M=64, efConstruction=400, ef=(200, 400, 800), k=100, repeats=5, warmup=2x1000, query_workers=28, inner_threads=1
+2026-09-18 17:58:32 U1 validated: base=991000, queries=10000, dim=256, rounds=32, cutoff=2217973632320739178, accepted=118920, selectivity=0.12000000
+2026-09-18 17:58:32 loading reusable index <remote_artifact> (1542181176 bytes)
+2026-09-18 17:58:34 begin mode=precomputed ef=200
+2026-09-18 17:58:58 warmup mode=precomputed ef=200 round=1/2 qps=41.057
+2026-09-18 17:59:19 warmup mode=precomputed ef=200 round=2/2 qps=47.691
+2026-09-18 18:03:02 performance mode=precomputed ef=200 repeat=1/5 qps=44.901 mean_ms=623.112 p95_ms=838.947 recall=0.998906
+2026-09-18 18:07:12 performance mode=precomputed ef=200 repeat=2/5 qps=39.930 mean_ms=700.663 p95_ms=1003.811 recall=0.998906
+2026-09-18 18:10:57 performance mode=precomputed ef=200 repeat=3/5 qps=44.474 mean_ms=629.082 p95_ms=854.986 recall=0.998906
+2026-09-18 18:14:47 performance mode=precomputed ef=200 repeat=4/5 qps=43.591 mean_ms=641.852 p95_ms=869.581 recall=0.998906
+2026-09-18 18:18:34 performance mode=precomputed ef=200 repeat=5/5 qps=43.996 mean_ms=635.932 p95_ms=856.156 recall=0.998906
+2026-09-18 18:23:26 counter mode=precomputed ef=200 calls/q=3626.16 accept=434.92 reject=3191.24 pred_us/q=3306.76 dist/q=33468.55 scans/q=90101.85
+2026-09-18 18:23:26 begin mode=precomputed ef=400
+2026-09-18 18:24:07 warmup mode=precomputed ef=400 round=1/2 qps=24.289
+2026-09-18 18:24:48 warmup mode=precomputed ef=400 round=2/2 qps=24.468
+2026-09-18 18:31:35 performance mode=precomputed ef=400 repeat=1/5 qps=24.565 mean_ms=1139.148 p95_ms=1493.195 recall=0.999826
+2026-09-18 18:38:17 performance mode=precomputed ef=400 repeat=2/5 qps=24.886 mean_ms=1124.430 p95_ms=1480.389 recall=0.999826
+2026-09-18 18:44:57 performance mode=precomputed ef=400 repeat=3/5 qps=25.004 mean_ms=1119.106 p95_ms=1474.082 recall=0.999826
+2026-09-18 18:51:39 performance mode=precomputed ef=400 repeat=4/5 qps=24.873 mean_ms=1125.031 p95_ms=1473.972 recall=0.999826
+2026-09-18 18:58:22 performance mode=precomputed ef=400 repeat=5/5 qps=24.786 mean_ms=1128.943 p95_ms=1483.457 recall=0.999826
+2026-09-18 19:07:11 counter mode=precomputed ef=400 calls/q=6658.81 accept=798.90 reject=5859.92 pred_us/q=6011.91 dist/q=54534.56 scans/q=179428.70
+2026-09-18 19:07:11 begin mode=precomputed ef=800
+2026-09-18 19:08:26 warmup mode=precomputed ef=800 round=1/2 qps=13.461
+2026-09-18 19:09:38 warmup mode=precomputed ef=800 round=2/2 qps=13.733
+2026-09-18 19:21:58 performance mode=precomputed ef=800 repeat=1/5 qps=13.525 mean_ms=2069.179 p95_ms=2637.528 recall=0.999971
+2026-09-18 19:34:16 performance mode=precomputed ef=800 repeat=2/5 qps=13.547 mean_ms=2065.926 p95_ms=2625.775 recall=0.999971
+2026-09-18 19:46:26 performance mode=precomputed ef=800 repeat=3/5 qps=13.695 mean_ms=2043.411 p95_ms=2587.418 recall=0.999971
+2026-09-18 20:00:38 performance mode=precomputed ef=800 repeat=4/5 qps=11.743 mean_ms=2383.088 p95_ms=3173.985 recall=0.999971
+2026-09-18 20:13:00 performance mode=precomputed ef=800 repeat=5/5 qps=13.476 mean_ms=2076.733 p95_ms=2654.167 recall=0.999971
+2026-09-18 20:29:08 counter mode=precomputed ef=800 calls/q=12303.42 accept=1476.46 reject=10826.96 pred_us/q=11023.94 dist/q=87488.19 scans/q=357335.82
+2026-09-18 20:29:08 begin mode=online ef=200
+2026-09-18 20:30:49 warmup mode=online ef=200 round=1/2 qps=9.880
+2026-09-18 20:32:31 warmup mode=online ef=200 round=2/2 qps=9.880
+2026-09-18 20:49:09 performance mode=online ef=200 repeat=1/5 qps=10.013 mean_ms=2793.269 p95_ms=4968.537 recall=0.998906
+2026-09-18 21:05:41 performance mode=online ef=200 repeat=2/5 qps=10.083 mean_ms=2774.013 p95_ms=4947.596 recall=0.998906
+2026-09-18 21:22:23 performance mode=online ef=200 repeat=3/5 qps=9.979 mean_ms=2802.921 p95_ms=4987.447 recall=0.998906
+2026-09-18 21:39:02 performance mode=online ef=200 repeat=4/5 qps=10.009 mean_ms=2794.488 p95_ms=4951.444 recall=0.998906
+2026-09-18 21:55:49 performance mode=online ef=200 repeat=5/5 qps=9.935 mean_ms=2815.642 p95_ms=5023.355 recall=0.998906
+2026-09-18 22:12:43 counter mode=online ef=200 calls/q=3626.16 accept=434.92 reject=3191.24 pred_us/q=87783.82 dist/q=33468.55 scans/q=90101.85
+2026-09-18 22:12:43 begin mode=online ef=400
+2026-09-18 22:15:45 warmup mode=online ef=400 round=1/2 qps=5.517
+2026-09-18 22:18:46 warmup mode=online ef=400 round=2/2 qps=5.502
+2026-09-18 22:48:45 performance mode=online ef=400 repeat=1/5 qps=5.560 mean_ms=5031.519 p95_ms=8704.155 recall=0.999826
+2026-09-18 23:18:47 performance mode=online ef=400 repeat=2/5 qps=5.549 mean_ms=5040.975 p95_ms=8711.253 recall=0.999826
+2026-09-18 23:48:52 performance mode=online ef=400 repeat=3/5 qps=5.542 mean_ms=5048.220 p95_ms=8756.455 recall=0.999826
+2026-09-19 00:18:57 performance mode=online ef=400 repeat=4/5 qps=5.539 mean_ms=5050.785 p95_ms=8704.162 recall=0.999826
+2026-09-19 00:49:00 performance mode=online ef=400 repeat=5/5 qps=5.546 mean_ms=5043.909 p95_ms=8754.981 recall=0.999826
+2026-09-19 01:19:24 counter mode=online ef=400 calls/q=6658.81 accept=798.90 reject=5859.92 pred_us/q=158173.76 dist/q=54534.56 scans/q=179428.70
+2026-09-19 01:19:24 begin mode=online ef=800
+2026-09-19 01:24:57 warmup mode=online ef=800 round=1/2 qps=2.998
+2026-09-19 01:30:26 warmup mode=online ef=800 round=2/2 qps=3.042
+2026-09-19 02:24:58 performance mode=online ef=800 repeat=1/5 qps=3.056 mean_ms=9154.740 p95_ms=15479.521 recall=0.999971
+2026-09-19 03:19:35 performance mode=online ef=800 repeat=2/5 qps=3.051 mean_ms=9168.310 p95_ms=15372.837 recall=0.999971
+2026-09-19 04:14:06 performance mode=online ef=800 repeat=3/5 qps=3.057 mean_ms=9150.605 p95_ms=15386.652 recall=0.999971
+2026-09-19 05:08:45 performance mode=online ef=800 repeat=4/5 qps=3.050 mean_ms=9172.774 p95_ms=15372.420 recall=0.999971
+2026-09-19 06:03:21 performance mode=online ef=800 repeat=5/5 qps=3.053 mean_ms=9164.396 p95_ms=15390.800 recall=0.999971
+2026-09-19 06:58:39 counter mode=online ef=800 calls/q=12303.42 accept=1476.46 reject=10826.96 pred_us/q=288496.81 dist/q=87488.19 scans/q=357335.82
+2026-09-19 06:58:39 EXPERIMENT_COMPLETE

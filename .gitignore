@@ -7,16 +7,28 @@ install/*.txt
 install/*.yaml
 install/lib-*/
 data/*
-*.class
+!data/manifests/
+!data/manifests/**
 
+# Workload binaries are Hugging Face-only payloads.
+/data/external_hdf5/
+
+*.class
 *.log
 
 results/*
 !results/*.png
 !results/vldb2015/*
+!results/build_time/
+!results/build_time/**
+!results/diagnostics/
+!results/diagnostics/**
+!results/raw/
+!results/raw/**
 
 venv
-
 .idea
-
 logs/*
+
+# Internal audit and excluded release-scope material.
+/_remote_stage/

@@ -1,0 +1,10 @@
+artifact_group,destination,public_path,status,scope,notes
+workload_data,huggingface,data/external_hdf5,ready,five_new_datasets_only,Upload only the five HDF5 files themselves.
+workload_metadata,github,data/manifests,ready,five_new_datasets,Manifests and SHA-256 values describe the Hugging Face files.
+correlation_results,github,results/raw/correlation_campaign_20260813,selected,C1-C4,Four new correlation datasets with raw CSV/log/manifest evidence.
+correlation_diagnostics,github,results/diagnostics/ACORN_single_thread_20260920,selected,C1-C4,ACORN single-thread reuse audit for the new datasets.
+udf_results,github,results/diagnostics/U1,selected,U1 artificial-udf-12,Raw passes summary repeats patch and completion marker.
+build_time_results,github,results/build_time,selected,all_available_workloads,All currently available build-time summary tables including legacy workloads.
+new_dataset_figures,github,figures,selected,C1-C4;U1,Only new-dataset figures and build-time figures remain public candidates.
+code_and_protocol,github,configs;docs;figures/scripts,selected,reproducibility,Code scripts protocols and plotting sources.
+legacy_search_results,internal,_remote_stage/excluded_by_release_scope_20260921,excluded,W1-W4;S1-S8;R1-R2,Legacy search/Recall/QPS tables and diagnostics are retained only for audit.

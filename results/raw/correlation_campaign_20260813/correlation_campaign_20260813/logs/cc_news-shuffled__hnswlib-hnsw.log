@@ -1,0 +1,218 @@
+START 2026-08-14T19:33:00+08:00 slot=0 cpuset=0-27
+2026-08-14 19:33:01,507 - bvb - INFO - running only hnswlib-hnsw
+2026-08-14 19:33:01,508 - bvb - INFO - Order: [Definition(algorithm='hnswlib-hnsw', constructor='HNSWlibHNSW', module='bigvectorbench.algorithms.hnswlib', docker_tag='bigvectorbench-hnswlib', arguments=['euclidean', 384, {'M': 64, 'efConstruction': 100}], query_argument_groups=[[100], [200], [400], [800], [1600]], disabled=False), Definition(algorithm='hnswlib-hnsw', constructor='HNSWlibHNSW', module='bigvectorbench.algorithms.hnswlib', docker_tag='bigvectorbench-hnswlib', arguments=['euclidean', 384, {'M': 32, 'efConstruction': 400}], query_argument_groups=[[100], [200], [400], [800], [1600]], disabled=False), Definition(algorithm='hnswlib-hnsw', constructor='HNSWlibHNSW', module='bigvectorbench.algorithms.hnswlib', docker_tag='bigvectorbench-hnswlib', arguments=['euclidean', 384, {'M': 64, 'efConstruction': 400}], query_argument_groups=[[100], [200], [400], [800], [1600]], disabled=False), Definition(algorithm='hnswlib-hnsw', constructor='HNSWlibHNSW', module='bigvectorbench.algorithms.hnswlib', docker_tag='bigvectorbench-hnswlib', arguments=['euclidean', 384, {'M': 32, 'efConstruction': 100}], query_argument_groups=[[100], [200], [400], [800], [1600]], disabled=False), Definition(algorithm='hnswlib-hnsw', constructor='HNSWlibHNSW', module='bigvectorbench.algorithms.hnswlib', docker_tag='bigvectorbench-hnswlib', arguments=['euclidean', 384, {'M': 128, 'efConstruction': 400}], query_argument_groups=[[100], [200], [400], [800], [1600]], disabled=False)]
+Process Process-1:
+Traceback (most recent call last):
+  File "<remote_artifact>", line 314, in _bootstrap
+    self.run()
+  File "<remote_artifact>", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "<remote_artifact>", line 152, in run_worker
+    run(
+  File "<remote_artifact>", line 834, in run
+    descriptor, results = run_individual_query(
+  File "<remote_artifact>", line 307, in run_individual_query
+    results = execute_queries(X_test, X_test_label)
+  File "<remote_artifact>", line 275, in execute_queries
+    return list(
+  File "<remote_artifact>", line 621, in result_iterator
+    yield _result_or_cancel(fs.pop())
+  File "<remote_artifact>", line 319, in _result_or_cancel
+    return fut.result(timeout)
+  File "<remote_artifact>", line 458, in result
+    return self.__get_result()
+  File "<remote_artifact>", line 403, in __get_result
+    raise self._exception
+  File "<remote_artifact>", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "<remote_artifact>", line 277, in <lambda>
+    lambda pair: single_query(pair[0], pair[1].flatten()),
+  File "<remote_artifact>", line 143, in single_query
+    candidates = algo.query(v, count, expr)
+  File "<remote_artifact>", line 177, in query
+    ids, _ = self.index.knn_query(np.asarray(v, dtype=np.float32), k=pool)
+RuntimeError: Cannot return the results in a contiguous 2D array. Probably ef or M is too small
+Trying to instantiate bigvectorbench.algorithms.hnswlib.HNSWlibHNSW(['euclidean', 384, {'M': 64, 'efConstruction': 100}])
+Dataset type: filter-ann
+Distance metric: euclidean
+Got a train set of size               (620643 * 384) with 1 labels
+label names: ['unixtime']
+label types: ['int32']
+filter expression function: 
+def filter_expr(unixtime):
+    unixtime_head = unixtime - 3 * 24 * 60 * 60
+    unixtime_tail = unixtime
+    return f"unixtime >= {unixtime_head} and unixtime <= {unixtime_tail}"
+
+Got 10000 queries
+Inserted data in 11.051629304885864
+Memory usage:  388.0
+Built index in  35.3408625125885
+Index size:  2812.0
+Running query argument group 1 of 5...
+Run 1/1...
+Warmup round 1/2...
+Processed 1000/9975 queries...
+Warmup round 2/2...
+Processed 2000/9975 queries...
+Processed 3000/9975 queries...
+2026-08-14 19:51:14,657 - bvb - INFO - Terminating 1 workers
+START 2026-08-16T10:03:37+08:00 slot=3 cpuset=84-111
+2026-08-16 10:03:38,624 - bvb - INFO - running only hnswlib-hnsw
+2026-08-16 10:03:38,625 - bvb - INFO - Order: [Definition(algorithm='hnswlib-hnsw', constructor='HNSWlibHNSW', module='bigvectorbench.algorithms.hnswlib', docker_tag='bigvectorbench-hnswlib', arguments=['euclidean', 384, {'M': 64, 'efConstruction': 100}], query_argument_groups=[[100], [200], [400], [800], [1600]], disabled=False), Definition(algorithm='hnswlib-hnsw', constructor='HNSWlibHNSW', module='bigvectorbench.algorithms.hnswlib', docker_tag='bigvectorbench-hnswlib', arguments=['euclidean', 384, {'M': 64, 'efConstruction': 400}], query_argument_groups=[[100], [200], [400], [800], [1600]], disabled=False), Definition(algorithm='hnswlib-hnsw', constructor='HNSWlibHNSW', module='bigvectorbench.algorithms.hnswlib', docker_tag='bigvectorbench-hnswlib', arguments=['euclidean', 384, {'M': 32, 'efConstruction': 100}], query_argument_groups=[[100], [200], [400], [800], [1600]], disabled=False), Definition(algorithm='hnswlib-hnsw', constructor='HNSWlibHNSW', module='bigvectorbench.algorithms.hnswlib', docker_tag='bigvectorbench-hnswlib', arguments=['euclidean', 384, {'M': 128, 'efConstruction': 400}], query_argument_groups=[[100], [200], [400], [800], [1600]], disabled=False), Definition(algorithm='hnswlib-hnsw', constructor='HNSWlibHNSW', module='bigvectorbench.algorithms.hnswlib', docker_tag='bigvectorbench-hnswlib', arguments=['euclidean', 384, {'M': 32, 'efConstruction': 400}], query_argument_groups=[[100], [200], [400], [800], [1600]], disabled=False)]
+Process Process-1:
+Traceback (most recent call last):
+  File "<remote_artifact>", line 314, in _bootstrap
+    self.run()
+  File "<remote_artifact>", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "<remote_artifact>", line 152, in run_worker
+    run(
+  File "<remote_artifact>", line 834, in run
+    descriptor, results = run_individual_query(
+  File "<remote_artifact>", line 307, in run_individual_query
+    results = execute_queries(X_test, X_test_label)
+  File "<remote_artifact>", line 275, in execute_queries
+    return list(
+  File "<remote_artifact>", line 621, in result_iterator
+    yield _result_or_cancel(fs.pop())
+  File "<remote_artifact>", line 319, in _result_or_cancel
+    return fut.result(timeout)
+  File "<remote_artifact>", line 458, in result
+    return self.__get_result()
+  File "<remote_artifact>", line 403, in __get_result
+    raise self._exception
+  File "<remote_artifact>", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "<remote_artifact>", line 277, in <lambda>
+    lambda pair: single_query(pair[0], pair[1].flatten()),
+  File "<remote_artifact>", line 143, in single_query
+    candidates = algo.query(v, count, expr)
+  File "<remote_artifact>", line 177, in query
+    ids, _ = self.index.knn_query(np.asarray(v, dtype=np.float32), k=pool)
+RuntimeError: Cannot return the results in a contiguous 2D array. Probably ef or M is too small
+Trying to instantiate bigvectorbench.algorithms.hnswlib.HNSWlibHNSW(['euclidean', 384, {'M': 64, 'efConstruction': 100}])
+Dataset type: filter-ann
+Distance metric: euclidean
+Got a train set of size               (620643 * 384) with 1 labels
+label names: ['unixtime']
+label types: ['int32']
+filter expression function: 
+def filter_expr(unixtime):
+    unixtime_head = unixtime - 3 * 24 * 60 * 60
+    unixtime_tail = unixtime
+    return f"unixtime >= {unixtime_head} and unixtime <= {unixtime_tail}"
+
+Got 10000 queries
+Inserted data in 11.051592826843262
+Memory usage:  569092.0
+Built index in  37.88085079193115
+Index size:  -41960.0
+Running query argument group 1 of 5...
+Run 1/1...
+Warmup round 1/2...
+Processed 1000/9975 queries...
+Warmup round 2/2...
+Processed 2000/9975 queries...
+Processed 3000/9975 queries...
+2026-08-16 10:23:44,931 - bvb - INFO - Terminating 1 workers
+START 2026-08-17T11:05:07+08:00 slot=3 cpuset=84-111
+2026-08-17 11:05:08,842 - bvb - INFO - running only hnswlib-hnsw
+2026-08-17 11:05:08,846 - bvb - INFO - Order: [Definition(algorithm='hnswlib-hnsw', constructor='HNSWlibHNSW', module='bigvectorbench.algorithms.hnswlib', docker_tag='bigvectorbench-hnswlib', arguments=['euclidean', 384, {'M': 32, 'efConstruction': 100}], query_argument_groups=[[100], [200], [400], [800], [1600]], disabled=False), Definition(algorithm='hnswlib-hnsw', constructor='HNSWlibHNSW', module='bigvectorbench.algorithms.hnswlib', docker_tag='bigvectorbench-hnswlib', arguments=['euclidean', 384, {'M': 32, 'efConstruction': 400}], query_argument_groups=[[100], [200], [400], [800], [1600]], disabled=False), Definition(algorithm='hnswlib-hnsw', constructor='HNSWlibHNSW', module='bigvectorbench.algorithms.hnswlib', docker_tag='bigvectorbench-hnswlib', arguments=['euclidean', 384, {'M': 128, 'efConstruction': 400}], query_argument_groups=[[100], [200], [400], [800], [1600]], disabled=False), Definition(algorithm='hnswlib-hnsw', constructor='HNSWlibHNSW', module='bigvectorbench.algorithms.hnswlib', docker_tag='bigvectorbench-hnswlib', arguments=['euclidean', 384, {'M': 64, 'efConstruction': 400}], query_argument_groups=[[100], [200], [400], [800], [1600]], disabled=False), Definition(algorithm='hnswlib-hnsw', constructor='HNSWlibHNSW', module='bigvectorbench.algorithms.hnswlib', docker_tag='bigvectorbench-hnswlib', arguments=['euclidean', 384, {'M': 64, 'efConstruction': 100}], query_argument_groups=[[100], [200], [400], [800], [1600]], disabled=False)]
+Process Process-1:
+Traceback (most recent call last):
+  File "<remote_artifact>", line 314, in _bootstrap
+    self.run()
+  File "<remote_artifact>", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "<remote_artifact>", line 152, in run_worker
+    run(
+  File "<remote_artifact>", line 834, in run
+    descriptor, results = run_individual_query(
+  File "<remote_artifact>", line 303, in run_individual_query
+    execute_queries(warmup_X, warmup_labels)
+  File "<remote_artifact>", line 275, in execute_queries
+    return list(
+  File "<remote_artifact>", line 621, in result_iterator
+    yield _result_or_cancel(fs.pop())
+  File "<remote_artifact>", line 319, in _result_or_cancel
+    return fut.result(timeout)
+  File "<remote_artifact>", line 451, in result
+    return self.__get_result()
+  File "<remote_artifact>", line 403, in __get_result
+    raise self._exception
+  File "<remote_artifact>", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "<remote_artifact>", line 277, in <lambda>
+    lambda pair: single_query(pair[0], pair[1].flatten()),
+  File "<remote_artifact>", line 143, in single_query
+    candidates = algo.query(v, count, expr)
+  File "<remote_artifact>", line 194, in query
+    ids, _ = self.index.knn_query(np.asarray(v, dtype=np.float32), k=pool)
+RuntimeError: Cannot return the results in a contiguous 2D array. Probably ef or M is too small
+Trying to instantiate bigvectorbench.algorithms.hnswlib.HNSWlibHNSW(['euclidean', 384, {'M': 32, 'efConstruction': 100}])
+Dataset type: filter-ann
+Distance metric: euclidean
+Got a train set of size               (620643 * 384) with 1 labels
+label names: ['unixtime']
+label types: ['int32']
+filter expression function: 
+def filter_expr(unixtime):
+    unixtime_head = unixtime - 3 * 24 * 60 * 60
+    unixtime_tail = unixtime
+    return f"unixtime >= {unixtime_head} and unixtime <= {unixtime_tail}"
+
+Got 10000 queries
+Inserted data in 7.036457777023315
+Memory usage:  21224.0
+Built index in  21.563867568969727
+Index size:  48868.0
+Running query argument group 1 of 5...
+Run 1/1...
+Warmup round 1/2...
+Processed 1000/9975 queries...
+Warmup round 2/2...
+Processed 2000/9975 queries...
+Processed 3000/9975 queries...
+Processed 4000/9975 queries...
+Processed 5000/9975 queries...
+Processed 6000/9975 queries...
+Processed 7000/9975 queries...
+Processed 8000/9975 queries...
+Processed 9000/9975 queries...
+Processed 10000/9975 queries...
+Processed 11000/9975 queries...
+Running query argument group 2 of 5...
+Run 1/1...
+Warmup round 1/2...
+Processed 1000/9975 queries...
+Warmup round 2/2...
+Processed 2000/9975 queries...
+Processed 3000/9975 queries...
+Processed 4000/9975 queries...
+Processed 5000/9975 queries...
+Processed 6000/9975 queries...
+Processed 7000/9975 queries...
+Processed 8000/9975 queries...
+Processed 9000/9975 queries...
+Processed 10000/9975 queries...
+Processed 11000/9975 queries...
+Running query argument group 3 of 5...
+Run 1/1...
+Warmup round 1/2...
+Processed 1000/9975 queries...
+Warmup round 2/2...
+Processed 2000/9975 queries...
+Processed 3000/9975 queries...
+Processed 4000/9975 queries...
+Processed 5000/9975 queries...
+Processed 6000/9975 queries...
+Processed 7000/9975 queries...
+Processed 8000/9975 queries...
+Processed 9000/9975 queries...
+Processed 10000/9975 queries...
+Processed 11000/9975 queries...
+Running query argument group 4 of 5...
+Run 1/1...
+Warmup round 1/2...
+2026-08-17 14:27:01,739 - bvb - INFO - Terminating 1 workers

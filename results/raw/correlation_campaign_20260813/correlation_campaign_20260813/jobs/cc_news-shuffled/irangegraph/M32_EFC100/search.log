@@ -1,0 +1,23 @@
+generating for 17
+load index finished ...
+[Warning] Cannot open ID mapping file: bins/01_maxcorr/id_mapping.bin. Using raw IDs.
+
+>>> Saving paths to 01_zero.txt (converting IDs)...
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.82992
+   [iRG Debug] Avg EntryPoint Distance to Query: 2.10532
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.72171
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.92522
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.82794
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.82723
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.78817
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.58473
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.62669
+   [iRG Debug] Avg EntryPoint Distance to Query: 1.90038
+>>> Saved 10 paths to 01_zero.txt.
+
+suffix = 17
+ef:100 latency_p50_s:0.000397 latency_p95_s:0.000501 latency_p99_s:0.00053626 warmup_runs:2 warmup_queries:1000
+ef:200 latency_p50_s:0.000669 latency_p95_s:0.000886 latency_p99_s:0.000953 warmup_runs:2 warmup_queries:1000
+ef:400 latency_p50_s:0.001288 latency_p95_s:0.001715 latency_p99_s:0.00186 warmup_runs:2 warmup_queries:1000
+ef:800 latency_p50_s:0.002359 latency_p95_s:0.003156 latency_p99_s:0.003457 warmup_runs:2 warmup_queries:1000
+ef:1600 latency_p50_s:0.004023 latency_p95_s:0.005466 latency_p99_s:0.00632526 warmup_runs:2 warmup_queries:1000

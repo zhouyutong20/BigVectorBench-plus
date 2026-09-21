@@ -1,0 +1,5 @@
+[Log] writing to: <remote_artifact>
+[Start] dataset=artificial-corr-12-shuffled tag=20260816_044821
+[Build] load_data[artificial-corr-12-shuffled]: 27.172s  (xb=(991000, 256), xq=(10000, 256), lb=(991000, 1), fq=(10000, 2))
+[Build] train_pq: 84.873s  (m=4, nbits=8)
+[Build] compute_codes: 2.022s  (codes shape=(991000, 4))

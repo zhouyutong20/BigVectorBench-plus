@@ -1,0 +1,37 @@
+START artificial-corr-12-original__elasticsearch-hnsw slot=28-55
+START artificial-corr-12-original__qdrant slot=84-111
+DONE artificial-corr-12-original__elasticsearch-hnsw status=complete rc=0
+START artificial-corr-12-original__redis-hnsw slot=28-55
+DONE artificial-corr-12-original__qdrant status=failed rc=4
+START artificial-corr-12-original__vearch-hnsw slot=84-111
+DONE artificial-corr-12-original__vearch-hnsw status=failed rc=4
+START artificial-corr-12-original__vearch-ivfpq slot=84-111
+DONE artificial-corr-12-original__vearch-ivfpq status=failed rc=4
+START artificial-corr-12-shuffled__qdrant slot=84-111
+DONE artificial-corr-12-shuffled__qdrant status=failed rc=4
+START artificial-corr-12-shuffled__vearch-hnsw slot=84-111
+DONE artificial-corr-12-shuffled__vearch-hnsw status=failed rc=4
+START artificial-corr-12-shuffled__vearch-ivfpq slot=84-111
+DONE artificial-corr-12-shuffled__vearch-ivfpq status=failed rc=4
+START cc_news-original__hnswlib-hnsw slot=84-111
+DONE cc_news-original__hnswlib-hnsw status=failed rc=4
+START cc_news-original__milvus-gpu-cagra slot=84-111
+DONE cc_news-original__milvus-gpu-cagra status=complete rc=0
+START cc_news-original__milvus-hnsw slot=84-111
+DONE cc_news-original__milvus-hnsw status=complete rc=0
+START cc_news-original__milvus-ivfpq slot=84-111
+DONE cc_news-original__milvus-ivfpq status=failed rc=4
+START cc_news-original__rangepq slot=84-111
+DONE cc_news-original__rangepq status=complete rc=0
+START cc_news-shuffled__hnswlib-hnsw slot=84-111
+DONE artificial-corr-12-original__redis-hnsw status=complete rc=0
+START artificial-corr-12-shuffled__redis-hnsw slot=28-55
+DONE cc_news-shuffled__hnswlib-hnsw status=failed rc=4
+START cc_news-shuffled__milvus-gpu-cagra slot=84-111
+DONE cc_news-shuffled__milvus-gpu-cagra status=failed rc=4
+START cc_news-shuffled__rangepq slot=84-111
+DONE cc_news-shuffled__rangepq status=complete rc=0
+DONE artificial-corr-12-shuffled__redis-hnsw status=complete rc=0
+START cc_news-shuffled__redis-hnsw slot=28-55
+DONE cc_news-shuffled__redis-hnsw status=complete rc=0
+REPAIR_DONE complete=8 failed=10

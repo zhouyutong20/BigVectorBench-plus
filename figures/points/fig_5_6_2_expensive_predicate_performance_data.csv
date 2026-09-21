@@ -1,0 +1,21 @@
+﻿algorithm_label,semantic,ef,qps,recall
+ACORN (precomputed),precomputed,100.0,7113.8,0.9514
+ACORN (precomputed),precomputed,200.0,4433.4,0.9804
+ACORN (precomputed),precomputed,400.0,2707.4,0.9934
+ACORN (precomputed),precomputed,800.0,1597.2,0.9982
+ACORN (precomputed),precomputed,1600.0,896.5,0.9996
+Elasticsearch-HNSW (online),online,100.0,45.7058151739057,0.9865290000000001
+Elasticsearch-HNSW (online),online,200.0,44.60871018231862,0.998959
+Elasticsearch-HNSW (online),online,400.0,44.375378808263655,0.9997870000000001
+Elasticsearch-HNSW (online),online,800.0,43.8309745303582,0.9999889999999999
+Elasticsearch-HNSW (online),online,1600.0,43.73018549437057,0.9999969999999999
+HNSWlib-HNSW (online),online,100.0,15.757716468215845,0.981915
+HNSWlib-HNSW (online),online,200.0,7.319494233283789,0.9950400000000001
+HNSWlib-HNSW (online),online,400.0,4.18840261536668,0.9988490000000002
+HNSWlib-HNSW (online),online,800.0,2.3165408471859275,0.9998
+HNSWlib-HNSW (online),online,1600.0,1.7420237451051461,0.9999600000000001
+Milvus-HNSW (precomputed),precomputed,100.0,141.13614310079905,0.999757
+Milvus-HNSW (precomputed),precomputed,200.0,90.11857980274681,0.9999620000000001
+Milvus-HNSW (precomputed),precomputed,400.0,68.79805602982799,0.99934
+Milvus-HNSW (precomputed),precomputed,800.0,47.866657097717905,0.999899
+Milvus-HNSW (precomputed),precomputed,1600.0,32.58739532860907,0.9999879999999999

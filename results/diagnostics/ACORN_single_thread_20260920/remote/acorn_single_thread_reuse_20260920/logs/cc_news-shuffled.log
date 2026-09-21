@@ -1,0 +1,167 @@
+====================
+START: running TEST_ACORN for hnsw, sift data --112cores
+
+N: 620643
+gamma: 12
+dataset: cc_news-shuffled
+M: 64
+M_beta: 64
+efc (efConstruction): 400
+efSearch sweep: 5 values (first=100 last=1600)
+[LABEL/FILTER IO] labels: path=Datasets/cc_news-shuffled/cc_news-shuffled_labels.fvecs, d_label=1, n_labels=620643
+[LABEL/FILTER IO] filters: path=Datasets/cc_news-shuffled/cc_news-shuffled_filters.fvecs, d_filter=2, n_filters=9975
+[0.022 s] Loaded metadata from labels first dim, count=620643
+dataset cc_news-shuffled: with label dim 1, filter_cnt 2
+[0.022 s] Loading query vectors and attributes
+get_file_name
+query vecs data loaded, with dim: 384, nb=9975
+[0.039 s] Loaded query vectors from ./Datasets/cc_news-shuffled/cc_news-shuffled_query.fvecs
+[0.039 s] Loaded 9975 cc_news-shuffled queries
+load_gt: loaded GT from ./Datasets/cc_news-shuffled/cc_news-shuffled_neighbors.ivecs (ivecs n=9975 d=100, using first 100 ids)
+[0.058 s] Loaded ground truth, gt_size: 100, entries: 997500
+[0.058 s] Index Params -- d: 384, M: 64, N: 620643, gamma: 12
+====================Write Index====================
+
+====================Vectors====================
+
+[0.058 s] Loading database
+get_file_name
+[0.853 s] Loaded base vectors from file: ./Datasets/cc_news-shuffled/cc_news-shuffled_base.fvecs
+data loaded, with dim: 384, nb=620643
+[0.853 s] Indexing database, size 620643*384 from max 620643
+[0.853 s] Adding the vectors to the index
+[OMP] Using 1 threads for INDEX BUILD
+load index from: ./tmp/cc_news-shuffled/base_M=64_efc=400.json
+---- MEM[BASE_BUILD] ----
+begin_RSS : 950.29 MB (0.93 GB)
+peak_RSS  : 950.55 MB (0.93 GB)
+peak_HWM  : 950.55 MB (0.93 GB)
+end_RSS   : 950.68 MB (0.93 GB)
+delta_RSS : 0.26 MB
+ru_maxrss : 950.68 MB
+load index from: ./tmp/cc_news-shuffled/hybrid_M=64_efc400_Mb=64_gamma=12.json
+---- MEM[HYBRID_BUILD] ----
+begin_RSS : 950.68 MB (0.93 GB)
+peak_RSS  : 2647.39 MB (2.59 GB)
+peak_HWM  : 2647.39 MB (2.59 GB)
+end_RSS   : 2691.19 MB (2.63 GB)
+delta_RSS : 1696.71 MB
+ru_maxrss : 2691.19 MB
+index_build_s: 2.708004
+serialized_index_bytes: 1390711990
+build hybrid gamma1 index for dataset cc_news-shuffled
+---- MEM[HYBRID_G1_BUILD] ----
+begin_RSS : 2691.19 MB (2.63 GB)
+peak_RSS  : 0.00 MB (0.00 GB)
+peak_HWM  : 0.00 MB (0.00 GB)
+end_RSS   : 2691.19 MB (2.63 GB)
+delta_RSS : 0.00 MB
+ru_maxrss : 2691.19 MB
+[3.612 s] Vectors added to base index 
+Base index vectors added: 620643
+[3.612 s] Vectors added to hybrid index 
+Hybrid index vectors added620643
+[3.612 s] Vectors added to hybrid index with gamma=1 
+Hybrid index with gamma=1 vectors added620643
+[OMP] Using 1 threads for SEARCH
+====================================
+============ BASE INDEX =============
+====================================
+====================================
+============ ACORN INDEX =============
+====================================
+==================== ACORN INDEX ====================
+[3.674 s] Searching the 100 nearest neighbors of 9975 vectors in the index, efsearch 16
+[FILTER MAP] Using 1 threads outside search timing
+
+========================================
+=== FILTER DEBUG (First Batch) ===
+========================================
+
+Overall statistics:
+  Total elements: 248257200
+  Valid candidates: 6146444 (2.4758%)
+
+--- Query 0 ---
+Filter bounds:
+  Interval 0: [0.00, 0.00]
+Valid candidates for this query: 763 / 620643 (0.1229%)
+Direct-scan valid (label_dim=1,l=1): 763 / 620643 (0.1229%)
+First 5 base vectors passing filter:
+  Base   337: labels=[0]
+  Base   446: labels=[0]
+  Base  1035: labels=[0]
+  Base  2648: labels=[0]
+  Base  2908: labels=[0]
+
+--- Query 1 ---
+Filter bounds:
+  Interval 0: [0.00, 0.00]
+Valid candidates for this query: 763 / 620643 (0.1229%)
+Direct-scan valid (label_dim=1,l=1): 763 / 620643 (0.1229%)
+First 5 base vectors passing filter:
+  Base   337: labels=[0]
+  Base   446: labels=[0]
+  Base  1035: labels=[0]
+  Base  2648: labels=[0]
+  Base  2908: labels=[0]
+
+--- Query 2 ---
+Filter bounds:
+  Interval 0: [0.00, 0.00]
+Valid candidates for this query: 763 / 620643 (0.1229%)
+Direct-scan valid (label_dim=1,l=1): 763 / 620643 (0.1229%)
+First 5 base vectors passing filter:
+  Base   337: labels=[0]
+  Base   446: labels=[0]
+  Base  1035: labels=[0]
+  Base  2648: labels=[0]
+  Base  2908: labels=[0]
+========================================
+
+[efs=100][timed_k=100] search_time=28.402 s, avg=2.847 ms/query, QPS=351.2
+[efs=100] latency_p50_s=0.002797935 latency_p95_s=0.003419690 latency_p99_s=0.003440135 warmup_runs=2 warmup_queries=1000
+[efs=100] R@1=0.8920 (same run as timed_k=100)
+[efs=100] R@5=0.8891 (same run as timed_k=100)
+[efs=100] R@10=0.8867 (same run as timed_k=100)
+[efs=100] R@100=0.8301 (same run as timed_k=100)
+[efs=100] R@1=0.8920 | R@5=0.8891 | R@10=0.8867 | R@100=0.8301 | QPS@100=351.2
+[efs=200][timed_k=100] search_time=51.032 s, avg=5.116 ms/query, QPS=195.5
+[efs=200] latency_p50_s=0.005202317 latency_p95_s=0.005893123 latency_p99_s=0.006056155 warmup_runs=2 warmup_queries=1000
+[efs=200] R@1=0.8995 (same run as timed_k=100)
+[efs=200] R@5=0.8989 (same run as timed_k=100)
+[efs=200] R@10=0.8986 (same run as timed_k=100)
+[efs=200] R@100=0.8742 (same run as timed_k=100)
+[efs=200] R@1=0.8995 | R@5=0.8989 | R@10=0.8986 | R@100=0.8742 | QPS@100=195.5
+[efs=400][timed_k=100] search_time=94.715 s, avg=9.495 ms/query, QPS=105.3
+[efs=400] latency_p50_s=0.009706625 latency_p95_s=0.010698575 latency_p99_s=0.010895665 warmup_runs=2 warmup_queries=1000
+[efs=400] R@1=0.9029 (same run as timed_k=100)
+[efs=400] R@5=0.9032 (same run as timed_k=100)
+[efs=400] R@10=0.9039 (same run as timed_k=100)
+[efs=400] R@100=0.8954 (same run as timed_k=100)
+[efs=400] R@1=0.9029 | R@5=0.9032 | R@10=0.9039 | R@100=0.8954 | QPS@100=105.3
+[efs=800][timed_k=100] search_time=181.851 s, avg=18.231 ms/query, QPS=54.9
+[efs=800] latency_p50_s=0.018760253 latency_p95_s=0.020518348 latency_p99_s=0.020688512 warmup_runs=2 warmup_queries=1000
+[efs=800] R@1=0.9042 (same run as timed_k=100)
+[efs=800] R@5=0.9049 (same run as timed_k=100)
+[efs=800] R@10=0.9063 (same run as timed_k=100)
+[efs=800] R@100=0.9041 (same run as timed_k=100)
+[efs=800] R@1=0.9042 | R@5=0.9049 | R@10=0.9063 | R@100=0.9041 | QPS@100=54.9
+[efs=1600][timed_k=100] search_time=362.010 s, avg=36.292 ms/query, QPS=27.6
+[efs=1600] latency_p50_s=0.038182170 latency_p95_s=0.040791960 latency_p99_s=0.040869052 warmup_runs=2 warmup_queries=1000
+[efs=1600] R@1=0.9048 (same run as timed_k=100)
+[efs=1600] R@5=0.9058 (same run as timed_k=100)
+[efs=1600] R@10=0.9073 (same run as timed_k=100)
+[efs=1600] R@100=0.9073 (same run as timed_k=100)
+[efs=1600] R@1=0.9048 | R@5=0.9058 | R@10=0.9073 | R@100=0.9073 | QPS@100=27.6
+finished hybrid index examples
+============= ACORN QUERY PROFILING STATS =============
+[1153.777 s] Timing results for search of k=100 nearest neighbors of nq=9975 vectors in the index
+n1: 59875
+n2: 59875
+n3 (number distance comps at level 0): 269382074
+ndis: 0
+nreorder: 0
+average distance computations per query: 4499.074219
+[1153.777 s] -----DONE-----
+RUN_RC=0

@@ -1,0 +1,54 @@
+{
+  "base_count": 991000,
+  "dataset": "artificial-corr-12-original",
+  "files": {
+    "artificial-corr-12-original_base.fvecs": {
+      "bytes": 1018748000,
+      "sha256": "e3f03883e3bfdceaa0702891833c69e251aa8ef7646499cfd03e31840dd1748d"
+    },
+    "artificial-corr-12-original_filters.fvecs": {
+      "bytes": 120000,
+      "sha256": "974f12adf2fffa008a894328d109345a14690aa2b9543ae5e2c3691fe21ad197"
+    },
+    "artificial-corr-12-original_labels.fvecs": {
+      "bytes": 7928000,
+      "sha256": "70fbb8e54b2023391caae66e9d1b7d313125f7f2361e93d6c417d4ef1112281a"
+    },
+    "artificial-corr-12-original_neighbors.ivecs": {
+      "bytes": 4040000,
+      "sha256": "3b3ca4c65b2332bf26c3f06dd64e5aa2c794b84a6d88e1de35bac6a1190ea05b"
+    },
+    "artificial-corr-12-original_query.fvecs": {
+      "bytes": 10280000,
+      "sha256": "ccef1a966a7cf7bd53e88ac3a091bdde9adb512ed852f8e78df60825a146aca0"
+    },
+    "irangegraph/17.bin": {
+      "bytes": 80000,
+      "sha256": "32cd8c73eda36c2ee332aa103b834061716e82e5fba9a8e76645a640fcdc6725"
+    },
+    "irangegraph/gt17.bin": {
+      "bytes": 4000000,
+      "sha256": "f3428e32dc3643fd7325d8bad77b9db05176328ae9b927a8ee45fe4294df92b7"
+    },
+    "irangegraph/id_mapping.bin": {
+      "bytes": 3964000,
+      "sha256": "cb58dfb51e792b2f77c44d3f6efaf606c5144b7c6ecc16f7be614bc958c199c6"
+    },
+    "irangegraph/xb.bin": {
+      "bytes": 1014784008,
+      "sha256": "f0dff7a2a7e67c84f69df9f6e434df53fb4370a6d9a409bc0aa8fd612c09b764"
+    },
+    "irangegraph/xq.bin": {
+      "bytes": 10240008,
+      "sha256": "32b6f2eaae64392ead49418fbc83bad00f405e761fe156bf17204dd62a043093"
+    }
+  },
+  "filter_transform": "identity_float32",
+  "query_count_source": 10000,
+  "query_count_valid": 10000,
+  "schema_version": 1,
+  "source": "<remote_artifact>",
+  "source_sha256": "0d87b648e42558e2c692af2914b0a81520d3263180a04fd4efd0adb65bcb3814",
+  "top_k": 100,
+  "vectors_shared_with_pair": false
+}

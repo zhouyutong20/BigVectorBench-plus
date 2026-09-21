@@ -1,0 +1,27 @@
+{
+  "M": 64,
+  "accepted": 118920,
+  "base": 991000,
+  "counter_records": 6,
+  "dataset": "artificial-udf-12",
+  "dim": 256,
+  "efConstruction": 400,
+  "efs": [
+    200,
+    400,
+    800
+  ],
+  "index": "hnswlib_M64_efc400.bin",
+  "inner_threads": 1,
+  "k": 100,
+  "performance_records": 30,
+  "queries": 10000,
+  "query_workers": 28,
+  "repeats": 5,
+  "selectivity": 0.12,
+  "status": "complete",
+  "udf_cutoff": 2217973632320739178,
+  "udf_rounds": 32,
+  "warmup_queries": 1000,
+  "warmup_rounds": 2
+}

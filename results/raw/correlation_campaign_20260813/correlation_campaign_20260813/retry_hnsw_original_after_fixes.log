@@ -1,0 +1,3 @@
+jobs=68 runnable=1 blocked=16 parallelism=4
+START cc_news-original__hnswlib-hnsw slot=0 cpuset=0-27
+DONE cc_news-original__hnswlib-hnsw status=complete rc=0

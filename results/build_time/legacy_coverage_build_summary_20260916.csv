@@ -1,0 +1,217 @@
+workload_id,dataset,algorithm,status,parameter_group_count,build_group_count,search_group_count,build_time_min_s,build_time_max_s,sources,notes
+W1,ag_news,RangePQ,complete_build_search,23,23,23,105.986678,141.151114,186:<remote_artifact>,at least one group has explicit build time and search metrics
+W1,ag_news,DiGRA,complete_build_search,1,1,1,1191.62,1191.62,186:<remote_artifact>,at least one group has explicit build time and search metrics
+W1,ag_news,ACORN,search_or_params_no_build_time,2,0,2,,,151:<remote_artifact> | 151:<remote_artifact>,"search/quality exists, but no explicit build time in selected source"
+W1,ag_news,iRangeGraph,complete_build_search,3,3,2,207.586,1626.39,153:<remote_artifact> | 153:<remote_artifact> | 153:<remote_artifact>,at least one group has explicit build time and search metrics
+W1,ag_news,HNSWlib,complete_build_search,4,4,4,19.3477,201.361,151:<remote_artifact> | 151:<remote_artifact>,at least one group has explicit build time and search metrics
+W1,ag_news,FAISS-hnsw,complete_build_search,1,1,1,46.655,46.655,151:<remote_artifact>,at least one group has explicit build time and search metrics
+W1,ag_news,FAISS-ivfpq,complete_build_search,1,1,1,289.258,289.258,151:<remote_artifact>,at least one group has explicit build time and search metrics
+W1,ag_news,milvus-hnsw,complete_build_search,144,144,144,35.0166,86.4492,local:数据&画图\w5-w10数据\16c64g.csv | local CSV: bvb数据/16c64g.csv,at least one group has explicit build time and search metrics
+W1,ag_news,milvus-ivfpq,missing,0,0,0,,,,no matching group in current extracted sources
+W1,ag_news,milvus-gpu-ivfpq,missing,0,0,0,,,,no matching group in current extracted sources
+W1,ag_news,milvus-gpu-cagra,complete_build_search,105,105,105,38.9989,58.3453,local:数据&画图\w5-w10数据\16c64g.csv | local CSV: bvb数据/16c64g.csv,at least one group has explicit build time and search metrics
+W1,ag_news,weaviate-hnsw,complete_build_search,288,288,288,23.87325143814087,88.3627,local:数据&画图\w5-w10数据\16c64g.csv | local CSV: bvb数据/16c64g.csv,at least one group has explicit build time and search metrics
+W1,ag_news,qdrant,complete_build_search,580,580,580,41.543455362319946,89.8735,local:数据&画图\w5-w10数据\16c64g.csv | <remote_server>:<remote_artifact> | local:数据&画图\w5-w10数据\16c64g.csv | local CSV: bvb数据/186.csv | local CSV: bvb数据/16c64g.csv,at least one group has explicit build time and search metrics
+W1,ag_news,vearch-ivfpq,complete_build_search,72,72,72,80.95266580581665,97.02403426170349,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+W1,ag_news,vearch-hnsw,complete_build_search,128,128,128,84.33925414085388,98.6318,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+W1,ag_news,redis-hnsw,complete_build_search,145,145,145,5.527092933654785,211.42725896835327,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+W1,ag_news,elasticsearch-hnsw,complete_build_search,884,884,884,86.80489444732666,100.86018180847168,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+W1,ag_news,pgvector-hnsw,complete_build_search,58,58,58,9.14240288734436,152.2431252002716,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+W2,cc_news,RangePQ,search_or_params_no_build_time,21,0,21,,,186:<remote_artifact>,"search/quality exists, but no explicit build time in selected source"
+W2,cc_news,DiGRA,complete_build_search,1,1,1,10430.9,10430.9,186:<remote_artifact>,at least one group has explicit build time and search metrics
+W2,cc_news,ACORN,complete_build_search,4,4,4,2015.83,5965.532,151:<remote_artifact> | 151:<remote_artifact> | 151:<remote_artifact> | 151:<remote_artifact>,at least one group has explicit build time and search metrics
+W2,cc_news,iRangeGraph,complete_build_search,2,2,1,1468.43,1468.43,153:<remote_artifact> | 153:<remote_artifact>,at least one group has explicit build time and search metrics
+W2,cc_news,HNSWlib,complete_build_search,4,4,4,2286.4,13434.9,151:<remote_artifact> | 151:<remote_artifact>,at least one group has explicit build time and search metrics
+W2,cc_news,FAISS-hnsw,complete_build_search,1,1,1,529.513,529.513,151:<remote_artifact>,at least one group has explicit build time and search metrics
+W2,cc_news,FAISS-ivfpq,complete_build_search,1,1,1,559.207,559.207,151:<remote_artifact>,at least one group has explicit build time and search metrics
+W2,cc_news,milvus-hnsw,complete_build_search,270,270,270,51.2121,765.2112872600555,local:数据&画图\w5-w10数据\16c64g.csv | <remote_server>:<remote_artifact> | local:数据&画图\w5-w10数据\16c64g.csv | local CSV: bvb数据/16c64g.csv | local CSV: bvb数据/cc_news_filter_fix.csv,at least one group has explicit build time and search metrics
+W2,cc_news,milvus-ivfpq,missing,0,0,0,,,,no matching group in current extracted sources
+W2,cc_news,milvus-gpu-ivfpq,missing,0,0,0,,,,no matching group in current extracted sources
+W2,cc_news,milvus-gpu-cagra,complete_build_search,195,195,195,168.3424367904663,353.335,local:数据&画图\w5-w10数据\16c64g.csv | local CSV: bvb数据/16c64g.csv | local CSV: bvb数据/cc_news_filter_fix.csv,at least one group has explicit build time and search metrics
+W2,cc_news,weaviate-hnsw,complete_build_search,290,290,290,131.23435735702515,544.827,local:数据&画图\w5-w10数据\16c64g.csv | local CSV: bvb数据/16c64g.csv | local CSV: bvb数据/cc_news_filter_fix.csv,at least one group has explicit build time and search metrics
+W2,cc_news,qdrant,complete_build_search,390,390,390,173.499,1056.1788914203644,local:数据&画图\w5-w10数据\16c64g.csv | local CSV: bvb数据/16c64g.csv | local CSV: bvb数据/cc_news_filter_fix.csv,at least one group has explicit build time and search metrics
+W2,cc_news,vearch-ivfpq,complete_build_search,72,72,72,586.1076872348785,609.645,<remote_server>:<remote_artifact> | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+W2,cc_news,vearch-hnsw,complete_build_search,128,128,128,430.61,792.067,<remote_server>:<remote_artifact> | <remote_server>:<remote_artifact> | <remote_server>:/sdh/zxge/VDB/BigVectorBench/results | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+W2,cc_news,redis-hnsw,complete_build_search,145,145,145,23.31451416015625,2213.63,<remote_server>:<remote_artifact> | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+W2,cc_news,elasticsearch-hnsw,complete_build_search,884,884,884,489.5306122303009,558.7754464149475,<remote_server>:<remote_artifact> | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+W2,cc_news,pgvector-hnsw,complete_build_search,53,53,53,128.99740600585938,425.17737436294556,<remote_server>:<remote_artifact> | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+W3,app_reviews,RangePQ,complete_build_search,16,16,16,117.764222,150.787866,186:<remote_artifact>,at least one group has explicit build time and search metrics
+W3,app_reviews,DiGRA,complete_build_search,1,1,1,3840.82,3840.82,186:<remote_artifact>,at least one group has explicit build time and search metrics
+W3,app_reviews,ACORN,complete_build_search,3,3,3,1099.41,4980.871,186:<remote_artifact> | 151:<remote_artifact> | 151:<remote_artifact>,at least one group has explicit build time and search metrics
+W3,app_reviews,iRangeGraph,complete_build_search,5,5,1,399.456,3197.83,153:<remote_artifact> | 153:<remote_artifact> | 153:<remote_artifact> | 153:<remote_artifact> | 153:<remote_artifact>,at least one group has explicit build time and search metrics
+W3,app_reviews,HNSWlib,complete_build_search,4,4,4,1167.6,32830.5,151:<remote_artifact> | 151:<remote_artifact>,at least one group has explicit build time and search metrics
+W3,app_reviews,FAISS-hnsw,complete_build_search,1,1,1,1110.04,1110.04,151:<remote_artifact>,at least one group has explicit build time and search metrics
+W3,app_reviews,FAISS-ivfpq,complete_build_search,1,1,1,346.863,346.863,151:<remote_artifact>,at least one group has explicit build time and search metrics
+W3,app_reviews,milvus-hnsw,complete_build_search,153,153,153,68.3861,407.455,local:数据&画图\w5-w10数据\16c64g.csv | <remote_server>:/sdh/zxge/VDB/BigVectorBench/results | local CSV: bvb数据/16c64g.csv,at least one group has explicit build time and search metrics
+W3,app_reviews,milvus-ivfpq,missing,0,0,0,,,,no matching group in current extracted sources
+W3,app_reviews,milvus-gpu-ivfpq,complete_build_search,1,1,1,43.2946,43.2946,<remote_server>:/sdh/zxge/VDB/BigVectorBench/results,at least one group has explicit build time and search metrics
+W3,app_reviews,milvus-gpu-cagra,complete_build_search,105,105,105,83.4587,121.971,local:数据&画图\w5-w10数据\16c64g.csv | local CSV: bvb数据/16c64g.csv,at least one group has explicit build time and search metrics
+W3,app_reviews,weaviate-hnsw,complete_build_search,288,288,288,63.4184,313.304,local:数据&画图\w5-w10数据\16c64g.csv | local CSV: bvb数据/16c64g.csv,at least one group has explicit build time and search metrics
+W3,app_reviews,qdrant,complete_build_search,347,347,347,88.7116,221.906,local:数据&画图\w5-w10数据\16c64g.csv | local CSV: bvb数据/16c64g.csv,at least one group has explicit build time and search metrics
+W3,app_reviews,vearch-ivfpq,complete_build_search,2,2,2,188.2679944038391,188.268,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+W3,app_reviews,vearch-hnsw,complete_build_search,2,2,2,193.72490692138672,193.725,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+W3,app_reviews,redis-hnsw,complete_build_search,144,144,144,10.023780822753906,1436.3827066421509,<remote_server>:/sdh/zxge/VDB/BigVectorBench/results | <remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+W3,app_reviews,elasticsearch-hnsw,complete_build_search,945,945,945,81.4043,212.204,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+W3,app_reviews,pgvector-hnsw,complete_build_search,58,58,58,21.22819471359253,124.2620861530304,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+W4,amazon_books,RangePQ,complete_build_search,7,7,7,995.21904,1129.104654,186:<remote_artifact>,at least one group has explicit build time and search metrics
+W4,amazon_books,DiGRA,complete_build_search,1,1,1,34556,34556,186:<remote_artifact>,at least one group has explicit build time and search metrics
+W4,amazon_books,ACORN,missing,1,0,0,,,151:<remote_artifact>,no matching group in current extracted sources
+W4,amazon_books,iRangeGraph,complete_build_search,2,2,1,96899.2,96899.2,153:<remote_artifact> | 153:<remote_artifact>,at least one group has explicit build time and search metrics
+W4,amazon_books,HNSWlib,complete_build_search,3,2,2,64734.1,64734.1,151:<remote_artifact> | 151:<remote_artifact>,at least one group has explicit build time and search metrics
+W4,amazon_books,FAISS-hnsw,complete_build_search,1,1,1,68646.5,68646.5,151:<remote_artifact>,at least one group has explicit build time and search metrics
+W4,amazon_books,FAISS-ivfpq,complete_build_search,1,1,1,8769.6,8769.6,151:<remote_artifact>,at least one group has explicit build time and search metrics
+W4,amazon_books,milvus-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+W4,amazon_books,milvus-ivfpq,missing,0,0,0,,,,no matching group in current extracted sources
+W4,amazon_books,milvus-gpu-ivfpq,complete_build_search,70,70,70,2939.472480535507,4586.785258293152,local CSV: bvb数据/32c128g.csv,at least one group has explicit build time and search metrics
+W4,amazon_books,milvus-gpu-cagra,missing,0,0,0,,,,no matching group in current extracted sources
+W4,amazon_books,weaviate-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+W4,amazon_books,qdrant,missing,0,0,0,,,,no matching group in current extracted sources
+W4,amazon_books,vearch-ivfpq,missing,0,0,0,,,,no matching group in current extracted sources
+W4,amazon_books,vearch-hnsw,complete_build_search,4,4,4,11218.9,16902.9,<remote_server>:/sdh/zxge/VDB/BigVectorBench/results,at least one group has explicit build time and search metrics
+W4,amazon_books,redis-hnsw,complete_build_search,117,117,117,1718.6956267356873,134169.22868013382,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+W4,amazon_books,elasticsearch-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+W4,amazon_books,pgvector-hnsw,complete_build_search,19,19,19,1711.6316895484924,79493.60124278069,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S1,msong-1filter-80a,RangePQ,complete_build_search,14,14,14,170.828852,212.798639,186:<remote_artifact>,at least one group has explicit build time and search metrics
+S1,msong-1filter-80a,DiGRA,complete_build_search,1,1,1,31103.3,31103.3,186:<remote_artifact>,at least one group has explicit build time and search metrics
+S1,msong-1filter-80a,ACORN,complete_build_search,2,2,2,1288.762,2081.256,153:<remote_artifact> | 153:<remote_artifact>,at least one group has explicit build time and search metrics
+S1,msong-1filter-80a,iRangeGraph,complete_build_search,2,2,1,2535.65,2535.65,153:<remote_artifact> | 153:<remote_artifact>,at least one group has explicit build time and search metrics
+S1,msong-1filter-80a,HNSWlib,complete_build_search,3,3,2,89.8635,2170.5510118938982,153:<remote_artifact> | 186:<remote_artifact>,at least one group has explicit build time and search metrics
+S1,msong-1filter-80a,FAISS-hnsw,complete_build_search,2,2,2,150.869,1559.8760476484895,153:<remote_artifact> | 186:<remote_artifact>,at least one group has explicit build time and search metrics
+S1,msong-1filter-80a,FAISS-ivfpq,complete_build_search,1,1,1,846.652,846.652,153:<remote_artifact>,at least one group has explicit build time and search metrics
+S1,msong-1filter-80a,milvus-hnsw,complete_build_search,7,7,7,299.141,406.2324786186218,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S1,msong-1filter-80a,milvus-ivfpq,complete_build_search,30,30,30,1243.7186543941498,1404.3522877693176,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S1,msong-1filter-80a,milvus-gpu-ivfpq,complete_build_search,30,30,30,149.51071977615356,235.03030133247375,<remote_server>:<remote_artifact> | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S1,msong-1filter-80a,milvus-gpu-cagra,complete_build_search,120,120,120,118.41079521179199,198.41818809509277,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+S1,msong-1filter-80a,weaviate-hnsw,complete_build_search,12,12,7,233.15376114845276,246.18,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S1,msong-1filter-80a,qdrant,complete_build_search,10,10,5,487.706,487.7064108848572,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S1,msong-1filter-80a,vearch-ivfpq,missing,0,0,0,,,,no matching group in current extracted sources
+S1,msong-1filter-80a,vearch-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+S1,msong-1filter-80a,redis-hnsw,complete_build_search,7,7,7,40.35526084899902,507.3412535190582,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S1,msong-1filter-80a,elasticsearch-hnsw,complete_build_search,6,6,6,767.3748111724854,767.375,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S1,msong-1filter-80a,pgvector-hnsw,complete_build_search,6,6,5,2443.68,2443.6820747852325,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S2,deep1M-2filter-50a,RangePQ,complete_build_search,9,9,9,136.322254,152.719563,186:<remote_artifact>,at least one group has explicit build time and search metrics
+S2,deep1M-2filter-50a,DiGRA,complete_build_search,1,1,1,20999,20999,186:<remote_artifact>,at least one group has explicit build time and search metrics
+S2,deep1M-2filter-50a,ACORN,complete_build_search,2,2,2,1369.427,2000.586,153:<remote_artifact> | 153:<remote_artifact>,at least one group has explicit build time and search metrics
+S2,deep1M-2filter-50a,iRangeGraph,complete_build_search,2,2,1,2184.58,2184.58,153:<remote_artifact> | 153:<remote_artifact>,at least one group has explicit build time and search metrics
+S2,deep1M-2filter-50a,HNSWlib,complete_build_search,2,2,1,87.3707,87.3707,153:<remote_artifact>,at least one group has explicit build time and search metrics
+S2,deep1M-2filter-50a,FAISS-hnsw,complete_build_search,1,1,1,148.551,148.551,153:<remote_artifact>,at least one group has explicit build time and search metrics
+S2,deep1M-2filter-50a,FAISS-ivfpq,complete_build_search,1,1,1,760.41,760.41,153:<remote_artifact>,at least one group has explicit build time and search metrics
+S2,deep1M-2filter-50a,milvus-hnsw,complete_build_search,7,7,7,189.477,344.38437938690186,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S2,deep1M-2filter-50a,milvus-ivfpq,complete_build_search,90,90,90,705.273,1319.42,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S2,deep1M-2filter-50a,milvus-gpu-ivfpq,complete_build_search,30,30,30,101.982,150.507,<remote_server>:<remote_artifact> | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S2,deep1M-2filter-50a,milvus-gpu-cagra,complete_build_search,120,120,120,93.0393,143.83440494537354,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+S2,deep1M-2filter-50a,weaviate-hnsw,complete_build_search,12,12,7,238.046,241.551,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S2,deep1M-2filter-50a,qdrant,complete_build_search,10,10,5,321.825,321.825279712677,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S2,deep1M-2filter-50a,vearch-ivfpq,missing,0,0,0,,,,no matching group in current extracted sources
+S2,deep1M-2filter-50a,vearch-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+S2,deep1M-2filter-50a,redis-hnsw,complete_build_search,7,7,7,42.782573223114014,497.353,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S2,deep1M-2filter-50a,elasticsearch-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+S2,deep1M-2filter-50a,pgvector-hnsw,complete_build_search,6,6,5,2459.4056656360626,2459.41,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S3,tiny5m-6filter-12a,RangePQ,complete_build_search,8,8,8,391.332245,780.618242,186:<remote_artifact>,at least one group has explicit build time and search metrics
+S3,tiny5m-6filter-12a,DiGRA,complete_build_search,1,1,1,258316,258316,186:<remote_artifact>,at least one group has explicit build time and search metrics
+S3,tiny5m-6filter-12a,ACORN,search_or_params_no_build_time,2,0,1,,,153:<remote_artifact> | 153:<remote_artifact>,"search/quality exists, but no explicit build time in selected source"
+S3,tiny5m-6filter-12a,iRangeGraph,quality_only_no_construction_log,0,0,0,,,,draw/iRangeGraph_res.* contains quality points; no tiny5m construction raw log
+S3,tiny5m-6filter-12a,HNSWlib,complete_build_search,2,1,1,19251.60056596622,19251.60056596622,153:<remote_artifact> | 186:<remote_artifact>,at least one group has explicit build time and search metrics
+S3,tiny5m-6filter-12a,FAISS-hnsw,complete_build_search,2,2,2,1515.07,18092.854010747746,153:<remote_artifact> | 186:<remote_artifact>,at least one group has explicit build time and search metrics
+S3,tiny5m-6filter-12a,FAISS-ivfpq,complete_build_search,1,1,1,3127.34,3127.34,153:<remote_artifact>,at least one group has explicit build time and search metrics
+S3,tiny5m-6filter-12a,milvus-hnsw,complete_build_search,7,7,7,2117.01,2459.18,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S3,tiny5m-6filter-12a,milvus-ivfpq,complete_build_search,90,90,90,5845.795288324356,11147.645462989807,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S3,tiny5m-6filter-12a,milvus-gpu-ivfpq,complete_build_search,30,30,30,773.0747210979462,964.1370182037354,<remote_server>:<remote_artifact> | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S3,tiny5m-6filter-12a,milvus-gpu-cagra,complete_build_search,120,120,120,718.084,2035.95,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+S3,tiny5m-6filter-12a,weaviate-hnsw,complete_build_search,2,2,2,1936.5690953731537,1936.57,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S3,tiny5m-6filter-12a,qdrant,missing,0,0,0,,,,no matching group in current extracted sources
+S3,tiny5m-6filter-12a,vearch-ivfpq,missing,0,0,0,,,,no matching group in current extracted sources
+S3,tiny5m-6filter-12a,vearch-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+S3,tiny5m-6filter-12a,redis-hnsw,complete_build_search,7,7,7,436.8356258869171,4586.79,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S3,tiny5m-6filter-12a,elasticsearch-hnsw,complete_build_search,6,6,6,4395.86,4395.862524271011,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S3,tiny5m-6filter-12a,pgvector-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+S4,sift10m-6filter-6a,RangePQ,complete_build_search,7,7,7,356.307649,443.134419,186:<remote_artifact>,at least one group has explicit build time and search metrics
+S4,sift10m-6filter-6a,DiGRA,complete_build_search,1,1,1,321303,321303,186:<remote_artifact>,at least one group has explicit build time and search metrics
+S4,sift10m-6filter-6a,ACORN,search_or_params_no_build_time,2,0,1,,,153:<remote_artifact> | 153:<remote_artifact>,"search/quality exists, but no explicit build time in selected source"
+S4,sift10m-6filter-6a,iRangeGraph,quality_only_no_construction_log,0,0,0,,,,draw/iRangeGraph_res.* contains quality points; no sift10m construction raw log
+S4,sift10m-6filter-6a,HNSWlib,complete_build_search,2,2,1,1391.16,1391.16,153:<remote_artifact>,at least one group has explicit build time and search metrics
+S4,sift10m-6filter-6a,FAISS-hnsw,complete_build_search,1,1,1,1365.32,1365.32,153:<remote_artifact>,at least one group has explicit build time and search metrics
+S4,sift10m-6filter-6a,FAISS-ivfpq,complete_build_search,1,1,1,9842.5,9842.5,153:<remote_artifact>,at least one group has explicit build time and search metrics
+S4,sift10m-6filter-6a,milvus-hnsw,complete_build_search,8,8,8,1816.9063217639923,2152.5125563144684,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S4,sift10m-6filter-6a,milvus-ivfpq,complete_build_search,165,165,165,2172.7376115322113,11147.645462989807,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S4,sift10m-6filter-6a,milvus-gpu-ivfpq,complete_build_search,30,30,30,531.3706755638123,649.791,<remote_server>:<remote_artifact> | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S4,sift10m-6filter-6a,milvus-gpu-cagra,complete_build_search,120,120,120,1001.23,1502.22,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+S4,sift10m-6filter-6a,weaviate-hnsw,complete_build_search,1,1,1,1936.5690953731537,1936.5690953731537,local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S4,sift10m-6filter-6a,qdrant,missing,0,0,0,,,,no matching group in current extracted sources
+S4,sift10m-6filter-6a,vearch-ivfpq,missing,0,0,0,,,,no matching group in current extracted sources
+S4,sift10m-6filter-6a,vearch-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+S4,sift10m-6filter-6a,redis-hnsw,complete_build_search,7,7,7,1250.2209079265594,5869.853342533112,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S4,sift10m-6filter-6a,elasticsearch-hnsw,complete_build_search,5,5,5,2845.51,2845.5103936195374,<remote_server>:/home/xyzhang/vldbj-resultss1-s4 | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S4,sift10m-6filter-6a,pgvector-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+S5,artificial-0.8,RangePQ,complete_build_search,8,8,4,152.16,153.91,186:<remote_artifact>,at least one group has explicit build time and search metrics
+S5,artificial-0.8,DiGRA,complete_build_search,1,1,1,25423.7,25423.7,186:<remote_artifact>,at least one group has explicit build time and search metrics
+S5,artificial-0.8,ACORN,search_or_params_no_build_time,1,0,1,,,153:<remote_artifact>,"search/quality exists, but no explicit build time in selected source"
+S5,artificial-0.8,iRangeGraph,complete_build_search,2,2,1,2771.5,2771.5,153:<remote_artifact> | 153:<remote_artifact>,at least one group has explicit build time and search metrics
+S5,artificial-0.8,HNSWlib,missing,0,0,0,,,,no matching group in current extracted sources
+S5,artificial-0.8,FAISS-hnsw,complete_build_search,1,1,1,260.784,260.784,153:<remote_artifact>,at least one group has explicit build time and search metrics
+S5,artificial-0.8,FAISS-ivfpq,complete_build_search,1,1,1,846.94,846.94,153:<remote_artifact>,at least one group has explicit build time and search metrics
+S5,artificial-0.8,milvus-hnsw,complete_build_search,108,108,108,74.98345994949341,100.32021641731262,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+S5,artificial-0.8,milvus-ivfpq,complete_build_search,30,30,30,69.2602,72.01113963127136,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+S5,artificial-0.8,milvus-gpu-ivfpq,complete_build_search,30,30,30,163.26589155197144,193.1573498249054,<remote_server>:<remote_artifact> | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S5,artificial-0.8,milvus-gpu-cagra,complete_build_search,120,120,120,115.078,290.92607378959656,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+S5,artificial-0.8,weaviate-hnsw,complete_build_search,60,60,60,249.9307873249054,468.358,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+S5,artificial-0.8,qdrant,complete_build_search,224,224,224,540.444,602.071,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+S5,artificial-0.8,vearch-ivfpq,build_only,5,5,0,690.814,886.38,<remote_server>:<remote_artifact>,"build metadata exists, but no parsed search metrics"
+S5,artificial-0.8,vearch-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+S5,artificial-0.8,redis-hnsw,build_only,8,8,0,1006.29,2981.98,<remote_server>:<remote_artifact>,"build metadata exists, but no parsed search metrics"
+S5,artificial-0.8,elasticsearch-hnsw,build_only,2,2,0,272.878,278.719,<remote_server>:<remote_artifact>,"build metadata exists, but no parsed search metrics"
+S5,artificial-0.8,pgvector-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+S6,artificial-0.5,RangePQ,complete_build_search,10,10,5,248.902,297.428241,186:<remote_artifact>,at least one group has explicit build time and search metrics
+S6,artificial-0.5,DiGRA,complete_build_search,1,1,1,25686.5,25686.5,186:<remote_artifact>,at least one group has explicit build time and search metrics
+S6,artificial-0.5,ACORN,search_or_params_no_build_time,1,0,1,,,153:<remote_artifact>,"search/quality exists, but no explicit build time in selected source"
+S6,artificial-0.5,iRangeGraph,complete_build_search,3,3,2,8197.77,9000.79,153:<remote_artifact> | 153:<remote_artifact> | 153:<remote_artifact>,at least one group has explicit build time and search metrics
+S6,artificial-0.5,HNSWlib,missing,0,0,0,,,,no matching group in current extracted sources
+S6,artificial-0.5,FAISS-hnsw,complete_build_search,1,1,1,635.139,635.139,153:<remote_artifact>,at least one group has explicit build time and search metrics
+S6,artificial-0.5,FAISS-ivfpq,complete_build_search,1,1,1,890.206,890.206,153:<remote_artifact>,at least one group has explicit build time and search metrics
+S6,artificial-0.5,milvus-hnsw,complete_build_search,48,48,48,141.9769802093506,680.6424517631531,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+S6,artificial-0.5,milvus-ivfpq,complete_build_search,30,30,30,135.72,139.14,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+S6,artificial-0.5,milvus-gpu-ivfpq,complete_build_search,30,30,30,318.9866967201233,447.27727150917053,<remote_server>:<remote_artifact> | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S6,artificial-0.5,milvus-gpu-cagra,complete_build_search,120,120,120,235.23066806793213,659.771,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+S6,artificial-0.5,weaviate-hnsw,complete_build_search,95,95,94,329.1619944572449,515.903,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+S6,artificial-0.5,qdrant,build_only,100,100,0,1176.36,1430.45,<remote_server>:<remote_artifact>,"build metadata exists, but no parsed search metrics"
+S6,artificial-0.5,vearch-ivfpq,build_only,5,5,0,1179.8,1544.95,<remote_server>:<remote_artifact>,"build metadata exists, but no parsed search metrics"
+S6,artificial-0.5,vearch-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+S6,artificial-0.5,redis-hnsw,build_only,8,8,0,1672.18,4160.04,<remote_server>:<remote_artifact>,"build metadata exists, but no parsed search metrics"
+S6,artificial-0.5,elasticsearch-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+S6,artificial-0.5,pgvector-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+S7,artificial-0.12,RangePQ,complete_build_search,10,10,5,368.60373,461.345,186:<remote_artifact>,at least one group has explicit build time and search metrics
+S7,artificial-0.12,DiGRA,complete_build_search,1,1,1,168927,168927,186:<remote_artifact>,at least one group has explicit build time and search metrics
+S7,artificial-0.12,ACORN,search_or_params_no_build_time,1,0,1,,,153:<remote_artifact>,"search/quality exists, but no explicit build time in selected source"
+S7,artificial-0.12,iRangeGraph,complete_build_search,3,3,2,21833.6,60281.4,153:<remote_artifact> | 153:<remote_artifact> | 153:<remote_artifact>,at least one group has explicit build time and search metrics
+S7,artificial-0.12,HNSWlib,missing,0,0,0,,,,no matching group in current extracted sources
+S7,artificial-0.12,FAISS-hnsw,complete_build_search,1,1,1,4127.28,4127.28,153:<remote_artifact>,at least one group has explicit build time and search metrics
+S7,artificial-0.12,FAISS-ivfpq,complete_build_search,1,1,1,3104.23,3104.23,153:<remote_artifact>,at least one group has explicit build time and search metrics
+S7,artificial-0.12,milvus-hnsw,complete_build_search,48,48,48,386.233,517.6364784240723,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+S7,artificial-0.12,milvus-ivfpq,complete_build_search,30,30,30,348.463,360.37520003318787,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+S7,artificial-0.12,milvus-gpu-ivfpq,complete_build_search,30,30,30,750.0707278251648,2347.3,<remote_server>:<remote_artifact> | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S7,artificial-0.12,milvus-gpu-cagra,complete_build_search,72,72,24,675.799,2571.59,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+S7,artificial-0.12,weaviate-hnsw,build_only,11,11,0,2524.48,2671.1,<remote_server>:<remote_artifact>,"build metadata exists, but no parsed search metrics"
+S7,artificial-0.12,qdrant,missing,0,0,0,,,,no matching group in current extracted sources
+S7,artificial-0.12,vearch-ivfpq,missing,0,0,0,,,,no matching group in current extracted sources
+S7,artificial-0.12,vearch-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+S7,artificial-0.12,redis-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+S7,artificial-0.12,elasticsearch-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+S7,artificial-0.12,pgvector-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+S8,artificial-0.06,RangePQ,complete_build_search,13,13,7,296.335746,364.873393,186:<remote_artifact>,at least one group has explicit build time and search metrics
+S8,artificial-0.06,DiGRA,complete_build_search,1,1,1,265765,265765,186:<remote_artifact>,at least one group has explicit build time and search metrics
+S8,artificial-0.06,ACORN,search_or_params_no_build_time,2,0,2,,,153:<remote_artifact> | 153:<remote_artifact>,"search/quality exists, but no explicit build time in selected source"
+S8,artificial-0.06,iRangeGraph,complete_build_search,2,2,1,63369.2,63369.2,153:<remote_artifact> | 153:<remote_artifact>,at least one group has explicit build time and search metrics
+S8,artificial-0.06,HNSWlib,complete_build_search,2,2,1,105530,105530,153:<remote_artifact>,at least one group has explicit build time and search metrics
+S8,artificial-0.06,FAISS-hnsw,complete_build_search,1,1,1,3169.06,3169.06,153:<remote_artifact>,at least one group has explicit build time and search metrics
+S8,artificial-0.06,FAISS-ivfpq,complete_build_search,1,1,1,9835.73,9835.73,153:<remote_artifact>,at least one group has explicit build time and search metrics
+S8,artificial-0.06,milvus-hnsw,complete_build_search,42,42,42,363.6556751728058,435.45729517936707,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+S8,artificial-0.06,milvus-ivfpq,complete_build_search,30,30,30,301.6556179523468,314.0494136810303,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+S8,artificial-0.06,milvus-gpu-ivfpq,complete_build_search,30,30,30,732.227,815.905,<remote_server>:<remote_artifact> | local CSV: bvb数据/151+153.csv,at least one group has explicit build time and search metrics
+S8,artificial-0.06,milvus-gpu-cagra,complete_build_search,120,120,120,894.689802646637,1611.150068283081,<remote_server>:<remote_artifact> | local CSV: bvb数据/186.csv,at least one group has explicit build time and search metrics
+S8,artificial-0.06,weaviate-hnsw,complete_build_search,5,5,5,3111.09,5303.81,<remote_server>:<remote_artifact>,at least one group has explicit build time and search metrics
+S8,artificial-0.06,qdrant,missing,0,0,0,,,,no matching group in current extracted sources
+S8,artificial-0.06,vearch-ivfpq,missing,0,0,0,,,,no matching group in current extracted sources
+S8,artificial-0.06,vearch-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+S8,artificial-0.06,redis-hnsw,build_only,8,8,0,9397.64,52809.4,<remote_server>:<remote_artifact>,"build metadata exists, but no parsed search metrics"
+S8,artificial-0.06,elasticsearch-hnsw,missing,0,0,0,,,,no matching group in current extracted sources
+S8,artificial-0.06,pgvector-hnsw,missing,0,0,0,,,,no matching group in current extracted sources

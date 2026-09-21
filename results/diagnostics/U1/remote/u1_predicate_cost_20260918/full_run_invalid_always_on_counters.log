@@ -1,0 +1,9 @@
+2026-09-18 17:52:02 starting U1 predicate-cost experiment; data=<remote_artifact>
+2026-09-18 17:52:02 protocol: M=64, efConstruction=400, ef=(200, 400, 800), k=100, repeats=5, warmup=2x1000, query_workers=28, inner_threads=1
+2026-09-18 17:52:02 U1 validated: base=991000, queries=10000, dim=256, rounds=32, cutoff=2217973632320739178, accepted=118920, selectivity=0.12000000
+2026-09-18 17:52:02 loading reusable index <remote_artifact> (1542181176 bytes)
+2026-09-18 17:52:04 smoke precomputed: qps=52.261, recall=0.998000, native_dist=700963
+2026-09-18 17:52:06 smoke online: qps=12.396, recall=0.998000, native_dist=700963
+2026-09-18 17:52:06 begin mode=precomputed ef=200
+2026-09-18 17:52:32 warmup mode=precomputed ef=200 round=1/2 qps=38.745
+2026-09-18 17:52:54 warmup mode=precomputed ef=200 round=2/2 qps=45.077

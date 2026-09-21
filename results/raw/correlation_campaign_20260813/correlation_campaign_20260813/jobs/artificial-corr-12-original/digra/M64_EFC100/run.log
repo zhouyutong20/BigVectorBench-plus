@@ -1,0 +1,81 @@
+read begin
+layer:0
+layer:1
+layer:2
+layer:3
+layer:4
+layer:5
+layer:6
+layer:7
+layer:8
+layer:9
+layer:10
+layer:11
+layer:12
+layer:13
+layer:14
+edge num:419432047
+average edges:423.241
+build time:4335.1
+rss_before_build_mb:992.383
+rss_after_build_mb:7085.14
+rss_delta_build_mb:6092.75
+peak_rss_build_mb:7085.01
+peak_hwm_build_mb:7085.01
+peak_rss_ru_maxrss_mb:7085.14
+buildOK
+ef:100
+recall@100:0.901448
+time@100:6.66622  (single timed pass; same run as all recall@K above)
+qps@100:1500.1
+latency_p50_s:0.000677182
+latency_p95_s:0.000808885
+latency_p99_s:0.000863839
+warmup_runs:2 warmup_queries:1000
+recall:0.901448
+time:6.66622
+qps:1500.1
+ef:200
+recall@100:0.961185
+time@100:11.8214  (single timed pass; same run as all recall@K above)
+qps@100:845.925
+latency_p50_s:0.00120711
+latency_p95_s:0.00141281
+latency_p99_s:0.00150076
+warmup_runs:2 warmup_queries:1000
+recall:0.961185
+time:11.8214
+qps:845.925
+ef:400
+recall@100:0.987635
+time@100:21.2028  (single timed pass; same run as all recall@K above)
+qps@100:471.636
+latency_p50_s:0.00216741
+latency_p95_s:0.00252782
+latency_p99_s:0.00266722
+warmup_runs:2 warmup_queries:1000
+recall:0.987635
+time:21.2028
+qps:471.636
+ef:800
+recall@100:0.996689
+time@100:38.129  (single timed pass; same run as all recall@K above)
+qps@100:262.268
+latency_p50_s:0.00388708
+latency_p95_s:0.00454633
+latency_p99_s:0.00480125
+warmup_runs:2 warmup_queries:1000
+recall:0.996689
+time:38.129
+qps:262.268
+ef:1600
+recall@100:0.999263
+time@100:67.8903  (single timed pass; same run as all recall@K above)
+qps@100:147.296
+latency_p50_s:0.00687843
+latency_p95_s:0.00808059
+latency_p99_s:0.00846621
+warmup_runs:2 warmup_queries:1000
+recall:0.999263
+time:67.8903
+qps:147.296

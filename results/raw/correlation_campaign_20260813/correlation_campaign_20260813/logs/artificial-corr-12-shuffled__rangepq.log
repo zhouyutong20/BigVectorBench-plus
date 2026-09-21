@@ -1,0 +1,16 @@
+START 2026-08-13T21:53:24+08:00 slot=3 cpuset=84-111
+Traceback (most recent call last):
+  File "<remote_artifact>", line 17, in <module>
+    import faiss
+  File "<remote_artifact>", line 16, in <module>
+    from .loader import *
+  File "<remote_artifact>", line 65, in <module>
+    from .swigfaiss import *
+  File "<remote_artifact>", line 10, in <module>
+    from . import _swigfaiss
+ImportError: /lib/x86_64-linux-gnu/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by <remote_artifact>
+START 2026-08-16T04:48:21+08:00 slot=1 cpuset=28-55
+<remote_artifact> line 62: 223391 Segmentation fault      (core dumped) taskset -c "$cpuset" "$py" -u "$root/run.py" --base_dir "$data_root" --stem "$dataset" --m 4 --nbits 8 --nlist 200 --iters 200 --cz 4096 --primary_dim 0 --topk 100 --ratio 15 --rerank_ratio 20 --L_values 10000,20000,40000,60000,80000 --L_eval 60000 --warmup-runs 2 --warmup-queries 1000 --start_q 0 --limit_q "$q" --out_prefix "$out"
+START 2026-08-17T10:56:46+08:00 slot=1 cpuset=28-55
+[INFO] Run finished. Outputs: <remote_artifact>
+[INFO] Full log: <remote_artifact>

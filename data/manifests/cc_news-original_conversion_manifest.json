@@ -1,0 +1,54 @@
+{
+  "base_count": 620643,
+  "dataset": "cc_news-original",
+  "files": {
+    "cc_news-original_base.fvecs": {
+      "bytes": 955790220,
+      "sha256": "1c9dba285b5c0d48fffa5e9f1c075a400337cd66de3dbff9bf1bce38578f2c22"
+    },
+    "cc_news-original_filters.fvecs": {
+      "bytes": 119700,
+      "sha256": "3973a75c7026a1e6c561c1e8388945fe3349205276e42f18c1d26fb322b088b0"
+    },
+    "cc_news-original_labels.fvecs": {
+      "bytes": 4965144,
+      "sha256": "67330aed75d617e258c5b1d553794eaf6a2aac49f159cb10231e4f03f5795713"
+    },
+    "cc_news-original_neighbors.ivecs": {
+      "bytes": 4029900,
+      "sha256": "b6c0d816117dd4dd6882c3cf63fa027fdd676b20c2149f9c802089e0732ca93c"
+    },
+    "cc_news-original_query.fvecs": {
+      "bytes": 15361500,
+      "sha256": "1964b3e8f0dc70a382452f64ecb78e58df8a337f5fb6e5f1ec975373b98f0283"
+    },
+    "irangegraph/17.bin": {
+      "bytes": 79800,
+      "sha256": "8ab1544c8be707f0aae25b5505c7fae0641255ac4fc27f225899975fe48e1769"
+    },
+    "irangegraph/gt17.bin": {
+      "bytes": 3990000,
+      "sha256": "9efebdf4629dd56683bcbcf22fc853bd6b4eeeb0264bb0301f42e72d0471fd3f"
+    },
+    "irangegraph/id_mapping.bin": {
+      "bytes": 2482572,
+      "sha256": "798e728df8c416006991b1afd8177be5a8cde097951c52d0cd498e7fceaf5107"
+    },
+    "irangegraph/xb.bin": {
+      "bytes": 953307656,
+      "sha256": "aed3c8bd138256f3761d97016ae1bf701b45e5b312ffa09c6d4662dc7704c625"
+    },
+    "irangegraph/xq.bin": {
+      "bytes": 15321608,
+      "sha256": "b5b477c0d2d3e4477ef715e6d21b3fd3b7a94187e8e6853e495387025671ec1b"
+    }
+  },
+  "filter_transform": "distinct_timestamp_ordinal",
+  "query_count_source": 10000,
+  "query_count_valid": 9975,
+  "schema_version": 1,
+  "source": "<remote_artifact>",
+  "source_sha256": "16586cd512dad9ea3ea01fd1fe7d2c2b97848c593cc52416fb7c94daefa7cc87",
+  "top_k": 100,
+  "vectors_shared_with_pair": false
+}

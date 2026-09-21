@@ -1,0 +1,88 @@
+{
+  "generated_at_unix": 1786359850.2651508,
+  "base_deep": "<remote_artifact>",
+  "base_cc_news": "<remote_artifact>",
+  "topk": 100,
+  "outputs": [
+    {
+      "path": "<remote_artifact>",
+      "bytes": 1049036768,
+      "train": 991000,
+      "test": 10000,
+      "dimension": 256,
+      "keys": [
+        "distances",
+        "neighbors",
+        "test_label",
+        "test_vec",
+        "train_label",
+        "train_vec"
+      ],
+      "invalid_neighbors": 0,
+      "family": "attribute_vector_correlation",
+      "nmi": 1.0
+    },
+    {
+      "path": "<remote_artifact>",
+      "bytes": 1049036768,
+      "train": 991000,
+      "test": 10000,
+      "dimension": 256,
+      "keys": [
+        "distances",
+        "neighbors",
+        "test_label",
+        "test_vec",
+        "train_label",
+        "train_vec"
+      ],
+      "invalid_neighbors": 0,
+      "family": "attribute_vector_correlation",
+      "nmi": 0.0004915869337688592
+    },
+    {
+      "path": "<remote_artifact>",
+      "bytes": 1057561360,
+      "train": 991000,
+      "test": 10000,
+      "dimension": 256,
+      "keys": [
+        "distances",
+        "neighbors",
+        "test_label",
+        "test_udf_input",
+        "test_vec",
+        "train_label",
+        "train_udf_input",
+        "train_vec"
+      ],
+      "invalid_neighbors": 0,
+      "family": "expensive_user_defined_predicate",
+      "udf_rounds": 32,
+      "udf_pass_rate": 0.12
+    },
+    {
+      "path": "<remote_artifact>",
+      "bytes": 997164232,
+      "train": 620643,
+      "test": 10000,
+      "dimension": 384,
+      "keys": [
+        "distances",
+        "neighbors",
+        "test_label",
+        "test_vec",
+        "train_label",
+        "train_vec"
+      ],
+      "invalid_neighbors": 509,
+      "family": "existing",
+      "mean_selectivity": 0.03536713037930018
+    }
+  ],
+  "notes": [
+    "correlation original/shuffled share vectors, queries, marginal attributes, and exact filter range",
+    "UDF stores train_udf_input/test_udf_input and matched precomputed udf_pass control",
+    "cc_news shuffled preserves original timestamp multiset and query centers; -1 marks insufficient candidates"
+  ]
+}

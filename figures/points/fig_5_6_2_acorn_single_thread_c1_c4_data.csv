@@ -1,0 +1,21 @@
+dataset,dataset_name,efSearch,recall_at_100,qps,threads
+C1,Artificial-corr-12 original,100,0.8587,193.1,1
+C1,Artificial-corr-12 original,200,0.9295,112.2,1
+C1,Artificial-corr-12 original,400,0.9727,66.3,1
+C1,Artificial-corr-12 original,800,0.9917,39.4,1
+C1,Artificial-corr-12 original,1600,0.9980,29.7,1
+C2,Artificial-corr-12 shuffled,100,0.9657,243.3,1
+C2,Artificial-corr-12 shuffled,200,0.9888,140.5,1
+C2,Artificial-corr-12 shuffled,400,0.9970,80.6,1
+C2,Artificial-corr-12 shuffled,800,0.9993,45.1,1
+C2,Artificial-corr-12 shuffled,1600,0.9999,27.8,1
+C3,CC-News original,100,0.8649,392.6,1
+C3,CC-News original,200,0.9010,217.8,1
+C3,CC-News original,400,0.9169,119.9,1
+C3,CC-News original,800,0.9238,62.3,1
+C3,CC-News original,1600,0.9262,31.0,1
+C4,CC-News shuffled,100,0.8301,351.2,1
+C4,CC-News shuffled,200,0.8742,195.5,1
+C4,CC-News shuffled,400,0.8954,105.3,1
+C4,CC-News shuffled,800,0.9041,54.9,1
+C4,CC-News shuffled,1600,0.9073,27.6,1

@@ -1,0 +1,7 @@
+START 2026-08-14T16:46:30+08:00 slot=1 cpuset=28-55
+<remote_artifact> line 62: 3664542 Segmentation fault      (core dumped) taskset -c "$cpuset" "$py" -u "$root/run_cc_news.py" --base_dir "$alias_root" --m 4 --nbits 8 --nlist 800 --iters 1000 --cz 2048 --rerank_ratio 40 --topk 100 --L_values 1000,2000,4000,8000,16000 --L_eval 4000 --start_q 0 --limit_q "$q" --out_prefix "$out"
+START 2026-08-16T10:01:36+08:00 slot=3 cpuset=84-111
+<remote_artifact> line 62: 632610 Segmentation fault      (core dumped) taskset -c "$cpuset" "$py" -u "$root/run_cc_news.py" --base_dir "$alias_root" --m 4 --nbits 8 --nlist 800 --iters 1000 --cz 2048 --rerank_ratio 40 --topk 100 --L_values 1000,2000,4000,8000,16000 --L_eval 4000 --start_q 0 --limit_q "$q" --out_prefix "$out"
+START 2026-08-17T11:01:06+08:00 slot=3 cpuset=84-111
+[INFO] Run finished. Outputs: <remote_artifact>
+[INFO] Full log: <remote_artifact>

@@ -1,0 +1,17 @@
+{
+  "schema_version": 4,
+  "experiment": "correlation_main_grid",
+  "algorithm": "vearch-ivfpq",
+  "dataset": "artificial-corr-12-shuffled",
+  "status": "running",
+  "threads": 28,
+  "outer_query_workers": 28,
+  "inner_query_threads": 1,
+  "cpuset": "84-111",
+  "warm_cache": true,
+  "os_page_cache_dropped": false,
+  "warmup_rounds": 2,
+  "warmup_queries": 1000,
+  "measured_query_runs": 1,
+  "independent_build_runs": 1
+}

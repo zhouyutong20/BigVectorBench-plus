@@ -1,0 +1,28 @@
+START 2026-08-24T17:45:03+08:00 slot=0 cpuset=0-27
+2026-08-24 17:45:05,048 - bvb - INFO - running only weaviate-hnsw
+2026-08-24 17:45:05,469 - bvb - INFO - Order: [Definition(algorithm='weaviate-hnsw', constructor='WeaviateHNSW', module='bigvectorbench.algorithms.weaviate', docker_tag='bigvectorbench-weaviate', arguments=['euclidean', {'M': 64, 'efConstruction': 100}], query_argument_groups=[[100], [200], [400], [800], [1600]], disabled=False), Definition(algorithm='weaviate-hnsw', constructor='WeaviateHNSW', module='bigvectorbench.algorithms.weaviate', docker_tag='bigvectorbench-weaviate', arguments=['euclidean', {'M': 64, 'efConstruction': 400}], query_argument_groups=[[100], [200], [400], [800], [1600]], disabled=False), Definition(algorithm='weaviate-hnsw', constructor='WeaviateHNSW', module='bigvectorbench.algorithms.weaviate', docker_tag='bigvectorbench-weaviate', arguments=['euclidean', {'M': 128, 'efConstruction': 400}], query_argument_groups=[[100], [200], [400], [800], [1600]], disabled=False), Definition(algorithm='weaviate-hnsw', constructor='WeaviateHNSW', module='bigvectorbench.algorithms.weaviate', docker_tag='bigvectorbench-weaviate', arguments=['euclidean', {'M': 32, 'efConstruction': 100}], query_argument_groups=[[100], [200], [400], [800], [1600]], disabled=False), Definition(algorithm='weaviate-hnsw', constructor='WeaviateHNSW', module='bigvectorbench.algorithms.weaviate', docker_tag='bigvectorbench-weaviate', arguments=['euclidean', {'M': 32, 'efConstruction': 400}], query_argument_groups=[[100], [200], [400], [800], [1600]], disabled=False)]
+ Container weaviate-weaviate-1  Stopping
+ Container weaviate-weaviate-1  Stopped
+ Container weaviate-weaviate-1  Removing
+ Container weaviate-weaviate-1  Removed
+ Network weaviate_default  Removing
+ Network weaviate_default  Removed
+ Network weaviate_default  Creating
+ Network weaviate_default  Created
+ Container weaviate-weaviate-1  Creating
+ Container weaviate-weaviate-1  Created
+ Container weaviate-weaviate-1  Starting
+ Container weaviate-weaviate-1  Started
+<remote_artifact> DeprecationWarning: Dep005: You are using weaviate-client version 4.7.1. The latest version is 4.23.0.
+            Consider upgrading to the latest version. See https://weaviate.io/developers/weaviate/client-libraries/python for details.
+  warnings.warn(
+<remote_artifact> DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments. To learn more, see the migration guide https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword
+  X_train = np.array(D["train_vec"])
+<remote_artifact> DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments. To learn more, see the migration guide https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword
+  X_train_label = np.array(D["train_label"])
+<remote_artifact> DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments. To learn more, see the migration guide https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword
+  X_test = np.array(D["test_vec"])
+<remote_artifact> DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments. To learn more, see the migration guide https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword
+  X_test_label = np.array(D["test_label"])
+<remote_artifact> PydanticDeprecatedSince211: Accessing the 'model_fields' attribute on the instance is deprecated. Instead, you should access this attribute from the model class. Deprecated in Pydantic V2.11 to be removed in V3.0.
+  for cls_field in self.model_fields:

@@ -1,0 +1,17 @@
+{
+  "algorithm": "vearch-hnsw",
+  "cpuset": "28-55",
+  "dataset": "cc_news-original",
+  "experiment": "correlation_main_grid",
+  "independent_build_runs": 1,
+  "inner_query_threads": 1,
+  "measured_query_runs": 1,
+  "os_page_cache_dropped": false,
+  "outer_query_workers": 28,
+  "schema_version": 4,
+  "status": "complete",
+  "threads": 28,
+  "warm_cache": true,
+  "warmup_queries": 1000,
+  "warmup_rounds": 2
+}

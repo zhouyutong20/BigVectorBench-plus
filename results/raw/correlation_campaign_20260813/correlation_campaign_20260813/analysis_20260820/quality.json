@@ -1,0 +1,196 @@
+{
+  "campaign": "<remote_artifact>",
+  "completed_job_count": 60,
+  "completed_jobs": [
+    "artificial-corr-12-original/acorn",
+    "artificial-corr-12-original/digra",
+    "artificial-corr-12-original/elasticsearch-hnsw",
+    "artificial-corr-12-original/faiss-hnsw",
+    "artificial-corr-12-original/hnswlib-hnsw",
+    "artificial-corr-12-original/irangegraph",
+    "artificial-corr-12-original/milvus-gpu-cagra",
+    "artificial-corr-12-original/milvus-gpu-ivfpq",
+    "artificial-corr-12-original/milvus-hnsw",
+    "artificial-corr-12-original/milvus-ivfpq",
+    "artificial-corr-12-original/qdrant",
+    "artificial-corr-12-original/rangepq",
+    "artificial-corr-12-original/redis-hnsw",
+    "artificial-corr-12-original/vearch-hnsw",
+    "artificial-corr-12-original/vearch-ivfpq",
+    "artificial-corr-12-shuffled/acorn",
+    "artificial-corr-12-shuffled/digra",
+    "artificial-corr-12-shuffled/elasticsearch-hnsw",
+    "artificial-corr-12-shuffled/faiss-hnsw",
+    "artificial-corr-12-shuffled/hnswlib-hnsw",
+    "artificial-corr-12-shuffled/irangegraph",
+    "artificial-corr-12-shuffled/milvus-gpu-cagra",
+    "artificial-corr-12-shuffled/milvus-gpu-ivfpq",
+    "artificial-corr-12-shuffled/milvus-hnsw",
+    "artificial-corr-12-shuffled/milvus-ivfpq",
+    "artificial-corr-12-shuffled/qdrant",
+    "artificial-corr-12-shuffled/rangepq",
+    "artificial-corr-12-shuffled/redis-hnsw",
+    "artificial-corr-12-shuffled/vearch-hnsw",
+    "artificial-corr-12-shuffled/vearch-ivfpq",
+    "cc_news-original/acorn",
+    "cc_news-original/digra",
+    "cc_news-original/elasticsearch-hnsw",
+    "cc_news-original/faiss-hnsw",
+    "cc_news-original/hnswlib-hnsw",
+    "cc_news-original/irangegraph",
+    "cc_news-original/milvus-gpu-cagra",
+    "cc_news-original/milvus-gpu-ivfpq",
+    "cc_news-original/milvus-hnsw",
+    "cc_news-original/milvus-ivfpq",
+    "cc_news-original/qdrant",
+    "cc_news-original/rangepq",
+    "cc_news-original/redis-hnsw",
+    "cc_news-original/vearch-hnsw",
+    "cc_news-original/vearch-ivfpq",
+    "cc_news-shuffled/acorn",
+    "cc_news-shuffled/digra",
+    "cc_news-shuffled/elasticsearch-hnsw",
+    "cc_news-shuffled/faiss-hnsw",
+    "cc_news-shuffled/hnswlib-hnsw",
+    "cc_news-shuffled/irangegraph",
+    "cc_news-shuffled/milvus-gpu-cagra",
+    "cc_news-shuffled/milvus-gpu-ivfpq",
+    "cc_news-shuffled/milvus-hnsw",
+    "cc_news-shuffled/milvus-ivfpq",
+    "cc_news-shuffled/qdrant",
+    "cc_news-shuffled/rangepq",
+    "cc_news-shuffled/redis-hnsw",
+    "cc_news-shuffled/vearch-hnsw",
+    "cc_news-shuffled/vearch-ivfpq"
+  ],
+  "analyzable_job_count": 58,
+  "completed_jobs_without_result_points": [
+    "cc_news-original/rangepq",
+    "cc_news-shuffled/rangepq"
+  ],
+  "result_point_count": 1219,
+  "hdf5_file_count": 917,
+  "native_point_count": 302,
+  "valid_point_count": 1219,
+  "invalid_point_count": 0,
+  "read_error_count": 0,
+  "read_errors": [],
+  "schema_counts": {
+    "4": 917
+  },
+  "diagnostic_point_count": 161,
+  "positive_index_size_point_count": 1004,
+  "expected_result_point_count_for_completed_jobs": 1556,
+  "overall_grid_coverage": 0.7834190231362468,
+  "fully_covered_job_count": 42,
+  "partial_or_missing_grid_jobs": [
+    {
+      "dataset": "artificial-corr-12-original",
+      "algorithm": "elasticsearch-hnsw",
+      "observed": 5,
+      "expected": 25
+    },
+    {
+      "dataset": "artificial-corr-12-original",
+      "algorithm": "qdrant",
+      "observed": 5,
+      "expected": 25
+    },
+    {
+      "dataset": "artificial-corr-12-original",
+      "algorithm": "redis-hnsw",
+      "observed": 8,
+      "expected": 25
+    },
+    {
+      "dataset": "artificial-corr-12-original",
+      "algorithm": "vearch-hnsw",
+      "observed": 5,
+      "expected": 25
+    },
+    {
+      "dataset": "artificial-corr-12-original",
+      "algorithm": "vearch-ivfpq",
+      "observed": 4,
+      "expected": 36
+    },
+    {
+      "dataset": "artificial-corr-12-shuffled",
+      "algorithm": "qdrant",
+      "observed": 5,
+      "expected": 25
+    },
+    {
+      "dataset": "artificial-corr-12-shuffled",
+      "algorithm": "redis-hnsw",
+      "observed": 2,
+      "expected": 25
+    },
+    {
+      "dataset": "artificial-corr-12-shuffled",
+      "algorithm": "vearch-hnsw",
+      "observed": 5,
+      "expected": 25
+    },
+    {
+      "dataset": "artificial-corr-12-shuffled",
+      "algorithm": "vearch-ivfpq",
+      "observed": 4,
+      "expected": 36
+    },
+    {
+      "dataset": "cc_news-original",
+      "algorithm": "hnswlib-hnsw",
+      "observed": 8,
+      "expected": 25
+    },
+    {
+      "dataset": "cc_news-original",
+      "algorithm": "milvus-gpu-cagra",
+      "observed": 10,
+      "expected": 30
+    },
+    {
+      "dataset": "cc_news-original",
+      "algorithm": "milvus-hnsw",
+      "observed": 10,
+      "expected": 25
+    },
+    {
+      "dataset": "cc_news-original",
+      "algorithm": "milvus-ivfpq",
+      "observed": 28,
+      "expected": 36
+    },
+    {
+      "dataset": "cc_news-shuffled",
+      "algorithm": "hnswlib-hnsw",
+      "observed": 3,
+      "expected": 25
+    },
+    {
+      "dataset": "cc_news-shuffled",
+      "algorithm": "milvus-gpu-cagra",
+      "observed": 5,
+      "expected": 30
+    },
+    {
+      "dataset": "cc_news-shuffled",
+      "algorithm": "redis-hnsw",
+      "observed": 1,
+      "expected": 25
+    },
+    {
+      "dataset": "cc_news-original",
+      "algorithm": "rangepq",
+      "observed": 0,
+      "expected": 1
+    },
+    {
+      "dataset": "cc_news-shuffled",
+      "algorithm": "rangepq",
+      "observed": 0,
+      "expected": 1
+    }
+  ]
+}

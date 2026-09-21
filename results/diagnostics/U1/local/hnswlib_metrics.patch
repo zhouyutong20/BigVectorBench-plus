@@ -1,0 +1,78 @@
+*** Begin Patch
+*** Update File: hnswlib/hnswalg.h
+@@
+     mutable std::atomic<long> metric_distance_computations{0};
+     mutable std::atomic<long> metric_hops{0};
++
++    // Query-side counters used by the isolated U1 predicate-cost experiment.
++    // A neighbor scan counts one entry enumerated from a level-0 or upper-level
++    // adjacency list; a distance count counts one fstdistfunc_ invocation.
++    mutable std::atomic<long> metric_neighbor_scans{0};
++
++    void resetQueryMetrics() {
++        metric_distance_computations = 0;
++        metric_hops = 0;
++        metric_neighbor_scans = 0;
++    }
++
++    long getMetricDistanceComputations() const {
++        return metric_distance_computations.load();
++    }
++
++    long getMetricHops() const {
++        return metric_hops.load();
++    }
++
++    long getMetricNeighborScans() const {
++        return metric_neighbor_scans.load();
++    }
+@@
+         tableint currObj = enterpoint_node_;
+         dist_t curdist = fstdistfunc_(query_data, getDataByInternalId(enterpoint_node_), dist_func_param_);
++        metric_distance_computations++;
+@@
+                 tableint *datal = (tableint *) (data + 1);
+                 for (int i = 0; i < size; i++) {
++                    metric_neighbor_scans++;
+                     tableint cand = datal[i];
+*** Update File: python_bindings/bindings.cpp
+@@
+     void set_num_threads(int num_threads) {
+         this->num_threads_default = num_threads;
+     }
++
++    void reset_metrics() {
++        if (appr_alg)
++            appr_alg->resetQueryMetrics();
++    }
++
++    py::dict get_metrics() const {
++        py::dict result;
++        if (!appr_alg) {
++            result["distance_computations"] = 0;
++            result["hops"] = 0;
++            result["neighbor_scans"] = 0;
++            return result;
++        }
++        result["distance_computations"] = appr_alg->getMetricDistanceComputations();
++        result["hops"] = appr_alg->getMetricHops();
++        result["neighbor_scans"] = appr_alg->getMetricNeighborScans();
++        return result;
++    }
+@@
+         .def("set_num_threads", &Index<float>::set_num_threads, py::arg("num_threads"))
++        .def("reset_metrics", &Index<float>::reset_metrics)
++        .def("get_metrics", &Index<float>::get_metrics)
+*** Update File: hnswlib/hnswalg.h
+@@
+            dist_t dist = fstdistfunc_(data_point, ep_data, dist_func_param_);
++            if (collect_metrics) {
++                metric_distance_computations++;
++            }
+@@
+            for (size_t j = 1; j <= size; j++) {
++                if (collect_metrics) {
++                    metric_neighbor_scans++;
++                }
+                int candidate_id = *(data + j);
+*** End Patch

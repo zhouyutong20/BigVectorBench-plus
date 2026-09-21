@@ -1,0 +1,399 @@
+{
+  "campaign": "correlation_repair_20260820",
+  "overall_parallelism": 4,
+  "repair_cpusets": [
+    "28-55",
+    "84-111"
+  ],
+  "repair_parallelism": 2,
+  "reserved_first_campaign_cpusets": [
+    "0-27",
+    "56-83"
+  ],
+  "schema_version": 1,
+  "started_at": "2026-08-20T16:35:35+08:00",
+  "targets": [
+    {
+      "algorithm": "elasticsearch-hnsw",
+      "command": [
+        "<remote_artifact>",
+        "elasticsearch-hnsw",
+        "artificial-corr-12-original",
+        "<remote_artifact>",
+        "28-55"
+      ],
+      "cpuset": "28-55",
+      "dataset": "artificial-corr-12-original",
+      "finished_at": "2026-08-20T19:43:57+08:00",
+      "locks": [
+        "elasticsearch"
+      ],
+      "log": "<remote_artifact>",
+      "pid": null,
+      "returncode": 0,
+      "started_at": "2026-08-20T16:35:35+08:00",
+      "status": "complete"
+    },
+    {
+      "algorithm": "qdrant",
+      "command": [
+        "<remote_artifact>",
+        "qdrant",
+        "artificial-corr-12-original",
+        "<remote_artifact>",
+        "84-111"
+      ],
+      "cpuset": "84-111",
+      "dataset": "artificial-corr-12-original",
+      "finished_at": "2026-08-20T20:18:09+08:00",
+      "locks": [
+        "qdrant"
+      ],
+      "log": "<remote_artifact>",
+      "pid": null,
+      "returncode": 4,
+      "started_at": "2026-08-20T16:35:35+08:00",
+      "status": "failed"
+    },
+    {
+      "algorithm": "redis-hnsw",
+      "command": [
+        "<remote_artifact>",
+        "redis-hnsw",
+        "artificial-corr-12-original",
+        "<remote_artifact>",
+        "28-55"
+      ],
+      "cpuset": "28-55",
+      "dataset": "artificial-corr-12-original",
+      "finished_at": "2026-08-22T09:21:08+08:00",
+      "locks": [
+        "redis"
+      ],
+      "log": "<remote_artifact>",
+      "pid": null,
+      "returncode": 0,
+      "started_at": "2026-08-20T19:43:57+08:00",
+      "status": "complete"
+    },
+    {
+      "algorithm": "vearch-hnsw",
+      "command": [
+        "<remote_artifact>",
+        "vearch-hnsw",
+        "artificial-corr-12-original",
+        "<remote_artifact>",
+        "84-111"
+      ],
+      "cpuset": "84-111",
+      "dataset": "artificial-corr-12-original",
+      "finished_at": "2026-08-20T21:48:25+08:00",
+      "locks": [
+        "port9001",
+        "vearch"
+      ],
+      "log": "<remote_artifact>",
+      "pid": null,
+      "returncode": 4,
+      "started_at": "2026-08-20T20:18:09+08:00",
+      "status": "failed"
+    },
+    {
+      "algorithm": "vearch-ivfpq",
+      "command": [
+        "<remote_artifact>",
+        "vearch-ivfpq",
+        "artificial-corr-12-original",
+        "<remote_artifact>",
+        "84-111"
+      ],
+      "cpuset": "84-111",
+      "dataset": "artificial-corr-12-original",
+      "finished_at": "2026-08-20T23:03:40+08:00",
+      "locks": [
+        "port9001",
+        "vearch"
+      ],
+      "log": "<remote_artifact>",
+      "pid": null,
+      "returncode": 4,
+      "started_at": "2026-08-20T21:48:25+08:00",
+      "status": "failed"
+    },
+    {
+      "algorithm": "qdrant",
+      "command": [
+        "<remote_artifact>",
+        "qdrant",
+        "artificial-corr-12-shuffled",
+        "<remote_artifact>",
+        "84-111"
+      ],
+      "cpuset": "84-111",
+      "dataset": "artificial-corr-12-shuffled",
+      "finished_at": "2026-08-21T02:39:55+08:00",
+      "locks": [
+        "qdrant"
+      ],
+      "log": "<remote_artifact>",
+      "pid": null,
+      "returncode": 4,
+      "started_at": "2026-08-20T23:03:40+08:00",
+      "status": "failed"
+    },
+    {
+      "algorithm": "redis-hnsw",
+      "command": [
+        "<remote_artifact>",
+        "redis-hnsw",
+        "artificial-corr-12-shuffled",
+        "<remote_artifact>",
+        "28-55"
+      ],
+      "cpuset": "28-55",
+      "dataset": "artificial-corr-12-shuffled",
+      "finished_at": "2026-08-23T18:18:44+08:00",
+      "locks": [
+        "redis"
+      ],
+      "log": "<remote_artifact>",
+      "pid": null,
+      "returncode": 0,
+      "started_at": "2026-08-22T09:21:08+08:00",
+      "status": "complete"
+    },
+    {
+      "algorithm": "vearch-hnsw",
+      "command": [
+        "<remote_artifact>",
+        "vearch-hnsw",
+        "artificial-corr-12-shuffled",
+        "<remote_artifact>",
+        "84-111"
+      ],
+      "cpuset": "84-111",
+      "dataset": "artificial-corr-12-shuffled",
+      "finished_at": "2026-08-21T04:13:31+08:00",
+      "locks": [
+        "port9001",
+        "vearch"
+      ],
+      "log": "<remote_artifact>",
+      "pid": null,
+      "returncode": 4,
+      "started_at": "2026-08-21T02:39:55+08:00",
+      "status": "failed"
+    },
+    {
+      "algorithm": "vearch-ivfpq",
+      "command": [
+        "<remote_artifact>",
+        "vearch-ivfpq",
+        "artificial-corr-12-shuffled",
+        "<remote_artifact>",
+        "84-111"
+      ],
+      "cpuset": "84-111",
+      "dataset": "artificial-corr-12-shuffled",
+      "finished_at": "2026-08-21T05:28:16+08:00",
+      "locks": [
+        "port9001",
+        "vearch"
+      ],
+      "log": "<remote_artifact>",
+      "pid": null,
+      "returncode": 4,
+      "started_at": "2026-08-21T04:13:31+08:00",
+      "status": "failed"
+    },
+    {
+      "algorithm": "hnswlib-hnsw",
+      "command": [
+        "<remote_artifact>",
+        "hnswlib-hnsw",
+        "cc_news-original",
+        "<remote_artifact>",
+        "84-111"
+      ],
+      "cpuset": "84-111",
+      "dataset": "cc_news-original",
+      "finished_at": "2026-08-22T01:55:28+08:00",
+      "locks": [],
+      "log": "<remote_artifact>",
+      "pid": null,
+      "returncode": 4,
+      "started_at": "2026-08-21T05:28:16+08:00",
+      "status": "failed"
+    },
+    {
+      "algorithm": "milvus-gpu-cagra",
+      "command": [
+        "<remote_artifact>",
+        "milvus-gpu-cagra",
+        "cc_news-original",
+        "<remote_artifact>",
+        "84-111"
+      ],
+      "cpuset": "84-111",
+      "dataset": "cc_news-original",
+      "finished_at": "2026-08-22T03:05:53+08:00",
+      "locks": [
+        "gpu0",
+        "milvus",
+        "port9001"
+      ],
+      "log": "<remote_artifact>",
+      "pid": null,
+      "returncode": 0,
+      "started_at": "2026-08-22T01:55:28+08:00",
+      "status": "complete"
+    },
+    {
+      "algorithm": "milvus-hnsw",
+      "command": [
+        "<remote_artifact>",
+        "milvus-hnsw",
+        "cc_news-original",
+        "<remote_artifact>",
+        "84-111"
+      ],
+      "cpuset": "84-111",
+      "dataset": "cc_news-original",
+      "finished_at": "2026-08-22T04:15:28+08:00",
+      "locks": [
+        "milvus",
+        "port9001"
+      ],
+      "log": "<remote_artifact>",
+      "pid": null,
+      "returncode": 0,
+      "started_at": "2026-08-22T03:05:53+08:00",
+      "status": "complete"
+    },
+    {
+      "algorithm": "milvus-ivfpq",
+      "command": [
+        "<remote_artifact>",
+        "milvus-ivfpq",
+        "cc_news-original",
+        "<remote_artifact>",
+        "84-111"
+      ],
+      "cpuset": "84-111",
+      "dataset": "cc_news-original",
+      "finished_at": "2026-08-22T04:40:49+08:00",
+      "locks": [
+        "milvus",
+        "port9001"
+      ],
+      "log": "<remote_artifact>",
+      "pid": null,
+      "returncode": 4,
+      "started_at": "2026-08-22T04:15:28+08:00",
+      "status": "failed"
+    },
+    {
+      "algorithm": "rangepq",
+      "command": [
+        "<remote_artifact>",
+        "rangepq",
+        "cc_news-original",
+        "<remote_artifact>",
+        "84-111"
+      ],
+      "cpuset": "84-111",
+      "dataset": "cc_news-original",
+      "finished_at": "2026-08-22T04:44:50+08:00",
+      "locks": [],
+      "log": "<remote_artifact>",
+      "pid": null,
+      "returncode": 0,
+      "started_at": "2026-08-22T04:40:49+08:00",
+      "status": "complete"
+    },
+    {
+      "algorithm": "hnswlib-hnsw",
+      "command": [
+        "<remote_artifact>",
+        "hnswlib-hnsw",
+        "cc_news-shuffled",
+        "<remote_artifact>",
+        "84-111"
+      ],
+      "cpuset": "84-111",
+      "dataset": "cc_news-shuffled",
+      "finished_at": "2026-08-22T15:35:44+08:00",
+      "locks": [],
+      "log": "<remote_artifact>",
+      "pid": null,
+      "returncode": 4,
+      "started_at": "2026-08-22T04:44:50+08:00",
+      "status": "failed"
+    },
+    {
+      "algorithm": "milvus-gpu-cagra",
+      "command": [
+        "<remote_artifact>",
+        "milvus-gpu-cagra",
+        "cc_news-shuffled",
+        "<remote_artifact>",
+        "84-111"
+      ],
+      "cpuset": "84-111",
+      "dataset": "cc_news-shuffled",
+      "finished_at": "2026-08-22T15:35:54+08:00",
+      "locks": [
+        "gpu0",
+        "milvus",
+        "port9001"
+      ],
+      "log": "<remote_artifact>",
+      "pid": null,
+      "returncode": 4,
+      "started_at": "2026-08-22T15:35:44+08:00",
+      "status": "failed"
+    },
+    {
+      "algorithm": "rangepq",
+      "command": [
+        "<remote_artifact>",
+        "rangepq",
+        "cc_news-shuffled",
+        "<remote_artifact>",
+        "84-111"
+      ],
+      "cpuset": "84-111",
+      "dataset": "cc_news-shuffled",
+      "finished_at": "2026-08-22T15:39:54+08:00",
+      "locks": [],
+      "log": "<remote_artifact>",
+      "pid": null,
+      "returncode": 0,
+      "started_at": "2026-08-22T15:35:54+08:00",
+      "status": "complete"
+    },
+    {
+      "algorithm": "redis-hnsw",
+      "command": [
+        "<remote_artifact>",
+        "redis-hnsw",
+        "cc_news-shuffled",
+        "<remote_artifact>",
+        "28-55"
+      ],
+      "cpuset": "28-55",
+      "dataset": "cc_news-shuffled",
+      "finished_at": "2026-08-24T15:35:41+08:00",
+      "locks": [
+        "redis"
+      ],
+      "log": "<remote_artifact>",
+      "pid": null,
+      "returncode": 0,
+      "started_at": "2026-08-23T18:18:44+08:00",
+      "status": "complete"
+    }
+  ],
+  "threads_per_job": 28,
+  "updated_at": "2026-08-24T15:35:41+08:00"
+}
